@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="uz"><head>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitnak 8-son maktab</title>
@@ -7,657 +9,693 @@
     <link rel="stylesheet" href="static/vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="static/vendor/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="static/main/css/main.css">
-  <link rel="stylesheet" href="static/main/css/style.css">
-     
-  </head>
-  <body>
-    
+    <link rel="stylesheet" href="static/main/css/style.css">
+
+</head>
+
+<body>
+
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top navbar-shadow" style="
     z-index: 100;
     width: 100%;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   ">
-  <div class="container">
-    <a class="navbar-brand" href="">
-      <img src="static/main/img/logo.png" width="70" height="70" alt="logo" class="d-inline-block align-middle">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('about'); return false;">
-            Biz haqimizda
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('gallery'); return false;">
-            Rasmlar
-          </a>
-        </li>
+    <div class="container">
+        <a class="navbar-brand" href="">
+            <img src="static/main/img/logo.png" width="70" height="70" alt="logo" class="d-inline-block align-middle">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('about'); return false;">
+                        Biz haqimizda
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('gallery'); return false;">
+                        Rasmlar
+                    </a>
+                </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('teacher'); return false;">
-            Ustozlar
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('news'); return false;">
-            Yangiliklar
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('contact'); return false;">
-            Aloqa
-          </a>
-        </li>
-      </ul>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('teacher'); return false;">
+                        Ustozlar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('news'); return false;">
+                        Yangiliklar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text" href="" onclick="scrollToSection('contact'); return false;">
+                        Aloqa
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 
 <script>
-  function scrollToSection(id) {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      console.log(`Scroll to section: ${id}`);
-    } else {
-      console.warn(`Section with id ${id} not found`);
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        console.log(`Scroll to section: ${id}`);
+      } else {
+        console.warn(`Section with id ${id} not found`);
+      }
     }
-  }
 </script>
 
 
+<main>
 
-    
-    <main>
-    
-      <section class="hero bg-cover bg-center d-flex justify-content-center align-items-center hero mt-10">
-  <div class="text-center text-white px-4">
-    <h1 class="display-4 hero_title fw-bold">
-  Xorazm viloyati Pitnak Shahar<br>8-son umumta'lim maktabi
-</h1>
-    <p class="lead mb-4 hero_text">
-      Bizning maktabimizda ta'lim olish sizni yangi imkoniyatlarga olib keladi!
-      Keling, birgalikda bilim olamiz.
-    </p>
-    <a href="contact" class="btn btn-warning btn-lg px-5 py-3" onclick="scrollToSection('contact'); return false;">Biz bilan bog'laning</a>
-  </div>
-</section>
+    <section class="hero bg-cover bg-center d-flex justify-content-center align-items-center hero mt-10">
+        <div class="text-center text-white px-4">
+            <h1 class="display-4 hero_title fw-bold">
+                Xorazm viloyati Pitnak Shahar<br>8-son umumta'lim maktabi
+            </h1>
+            <p class="lead mb-4 hero_text">
+                Bizning maktabimizda ta'lim olish sizni yangi imkoniyatlarga olib keladi!
+                Keling, birgalikda bilim olamiz.
+            </p>
+            <a href="contact" class="btn btn-warning btn-lg px-5 py-3"
+               onclick="scrollToSection('contact'); return false;">Biz bilan bog'laning</a>
+        </div>
+    </section>
 
-      
-<link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="static/main/css/about.css">
 
-<section id="about" class="container section py-5" style="scroll-margin-top: 5rem">
-  <div class="row align-items-center">
-    <div class="col-lg-6 mb-4 mb-lg-0">
-      <div class="card border-0 shadow-sm p-4 text-white bg-dark">
-        <h2 class="text-center mb-4" style="letter-spacing: 2px">
-          Biz haqimizda
-        </h2>
-        <p class="lead text-center">
-          Toshkent viloyati Angren Shahar 8-umumta'lim maktabi IT sohasiga
-          ixtisoslashgan.
-        </p>
-        <p class="about-text">Maktab bu bilim va tarbiya maskani bo‘lib, o‘quvchilarimizning intellektual, ma’naviy va jismoniy rivojlanishiga katta e’tibor qaratamiz. Bizning maqsadimiz – zamonaviy bilim va ko‘nikmalarni o‘rgatish bilan birga, o‘quvchilarni jamiyatga foydali, vatanparvar va mas’uliyatli shaxs sifatida shakllantirishdir.
-Maktabimizda malakali o‘qituvchilar jamoasi faoliyat olib boradi. Ular har bir o‘quvchining qobiliyatini rivojlantirishga yordam beradi. Shu bilan birga, zamonaviy o‘quv usullari va texnologiyalaridan foydalanib, ta’lim jarayonini yanada samarali qilamiz. Maktabimizda o‘quvchilar uchun turli to‘garaklar va tadbirlar tashkil etilib, ularning qobiliyatlari va qiziqishlarini rivojlantirishga katta ahamiyat qaratiladi. Shuningdek, biz ota-onalar bilan yaqin hamkorlikda ishlaymiz va ularning fikr-mulohazalarini inobatga olamiz.Har bir o‘quvchining muvaffaqiyati – bu bizning asosiy maqsadimiz. Shu sababli, maktabimizda qulay va do‘stona muhit yaratilgan. Biz o‘quvchilarimizning bilim olishga bo‘lgan ishtiyoqini oshirish va ularni kelajakda muvaffaqiyatli shaxs sifatida ko‘rishdan mamnunmiz. Maktab nafaqat ta’lim maskani, balki har bir o‘quvchi uchun orzularini amalga oshirish yo‘lida mustahkam poydevor yaratadigan joydir.</p>
-      </div>
-    </div>
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/main/css/about.css">
 
-    <div class="col-lg-6">
-      <div class="row g-4">
-        
-        <div class="col-md-4 d-flex flex-column align-items-center">
-          <img src="media/document_img/photo_2023-04-03_12-02-20.jpg" alt="Hujjat rasmi" class="img-fluid rounded mb-3" style="
+    <section id="about" class="container section py-5" style="scroll-margin-top: 5rem">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card border-0 shadow-sm p-4 text-white bg-dark">
+                    <h2 class="text-center mb-4" style="letter-spacing: 2px">
+                        Biz haqimizda
+                    </h2>
+                    <p class="lead text-center">
+                        Toshkent viloyati Angren Shahar 8-umumta'lim maktabi IT sohasiga
+                        ixtisoslashgan.
+                    </p>
+                    <p class="about-text">Maktab bu bilim va tarbiya maskani bo‘lib, o‘quvchilarimizning intellektual,
+                        ma’naviy va jismoniy rivojlanishiga katta e’tibor qaratamiz. Bizning maqsadimiz – zamonaviy
+                        bilim va ko‘nikmalarni o‘rgatish bilan birga, o‘quvchilarni jamiyatga foydali, vatanparvar va
+                        mas’uliyatli shaxs sifatida shakllantirishdir.
+                        Maktabimizda malakali o‘qituvchilar jamoasi faoliyat olib boradi. Ular har bir o‘quvchining
+                        qobiliyatini rivojlantirishga yordam beradi. Shu bilan birga, zamonaviy o‘quv usullari va
+                        texnologiyalaridan foydalanib, ta’lim jarayonini yanada samarali qilamiz. Maktabimizda
+                        o‘quvchilar uchun turli to‘garaklar va tadbirlar tashkil etilib, ularning qobiliyatlari va
+                        qiziqishlarini rivojlantirishga katta ahamiyat qaratiladi. Shuningdek, biz ota-onalar bilan
+                        yaqin hamkorlikda ishlaymiz va ularning fikr-mulohazalarini inobatga olamiz.Har bir o‘quvchining
+                        muvaffaqiyati – bu bizning asosiy maqsadimiz. Shu sababli, maktabimizda qulay va do‘stona muhit
+                        yaratilgan. Biz o‘quvchilarimizning bilim olishga bo‘lgan ishtiyoqini oshirish va ularni
+                        kelajakda muvaffaqiyatli shaxs sifatida ko‘rishdan mamnunmiz. Maktab nafaqat ta’lim maskani,
+                        balki har bir o‘quvchi uchun orzularini amalga oshirish yo‘lida mustahkam poydevor yaratadigan
+                        joydir.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row g-4">
+
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <img src="media/document_img/photo_2023-04-03_12-02-20.jpg" alt="Hujjat rasmi"
+                             class="img-fluid rounded mb-3" style="
               object-fit: cover;
               width: 290px;
               height: 300px;
               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
             ">
-          <a class="d-flex text-decoration-none text-dark align-items-center gap-3 text-center" href="/media/documents/photo_2023-04-03_12-02-28.jpg" target="_blank">
-            Yuklab olish <i class="bi bi-download text-warning"></i>
-          </a>
-        </div>
-        
-        <div class="col-md-4 d-flex flex-column align-items-center">
-          <img src="media/document_img/maktab.jpg" alt="Hujjat rasmi" class="img-fluid rounded mb-3" style="
+                        <a class="d-flex text-decoration-none text-dark align-items-center gap-3 text-center"
+                           href="/media/documents/photo_2023-04-03_12-02-28.jpg" target="_blank">
+                            Yuklab olish <i class="bi bi-download text-warning"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <img src="media/document_img/maktab.jpg" alt="Hujjat rasmi" class="img-fluid rounded mb-3"
+                             style="
               object-fit: cover;
               width: 290px;
               height: 300px;
               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
             ">
-          <a class="d-flex text-decoration-none text-dark align-items-center gap-3 text-center" href="/media/documents/maktab.jpg" target="_blank">
-            Yuklab olish <i class="bi bi-download text-warning"></i>
-          </a>
-        </div>
-        
-        <div class="col-md-4 d-flex flex-column align-items-center">
-          <img src="media/document_img/photo_2023-04-03_12-02-28.jpg" alt="Hujjat rasmi" class="img-fluid rounded mb-3" style="
+                        <a class="d-flex text-decoration-none text-dark align-items-center gap-3 text-center"
+                           href="/media/documents/maktab.jpg" target="_blank">
+                            Yuklab olish <i class="bi bi-download text-warning"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 d-flex flex-column align-items-center">
+                        <img src="media/document_img/photo_2023-04-03_12-02-28.jpg" alt="Hujjat rasmi"
+                             class="img-fluid rounded mb-3" style="
               object-fit: cover;
               width: 290px;
               height: 300px;
               box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
             ">
-          <a class="d-flex text-decoration-none text-dark align-items-center gap-3 text-center" href="/media/documents/photo_2023-04-03_12-02-20.jpg" target="_blank">
-            Yuklab olish <i class="bi bi-download text-warning"></i>
-          </a>
+                        <a class="d-flex text-decoration-none text-dark align-items-center gap-3 text-center"
+                           href="/media/documents/photo_2023-04-03_12-02-20.jpg" target="_blank">
+                            Yuklab olish <i class="bi bi-download text-warning"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        
+    </section>
+
+    <script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="static/main/js/about.js"></script>
+
+    <!--
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/static/main/css/about.css" />
+
+    <section id="about" class="container section py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="card border-0 shadow-sm p-4 text-white bg-dark">
+            <h2 class="text-center mb-4" style="letter-spacing: 2px">
+              Biz haqimizda
+            </h2>
+            <p class="lead text-center">
+              Toshkent viloyati Angren Shahar 4-umumta'lim maktabi IT sohasiga
+              ixtisoslashgan.
+            </p>
+            <p class="about-text">Maktab bu bilim va tarbiya maskani bo‘lib, o‘quvchilarimizning intellektual, ma’naviy va jismoniy rivojlanishiga katta e’tibor qaratamiz. Bizning maqsadimiz – zamonaviy bilim va ko‘nikmalarni o‘rgatish bilan birga, o‘quvchilarni jamiyatga foydali, vatanparvar va mas’uliyatli shaxs sifatida shakllantirishdir.
+    Maktabimizda malakali o‘qituvchilar jamoasi faoliyat olib boradi. Ular har bir o‘quvchining qobiliyatini rivojlantirishga yordam beradi. Shu bilan birga, zamonaviy o‘quv usullari va texnologiyalaridan foydalanib, ta’lim jarayonini yanada samarali qilamiz. Maktabimizda o‘quvchilar uchun turli to‘garaklar va tadbirlar tashkil etilib, ularning qobiliyatlari va qiziqishlarini rivojlantirishga katta ahamiyat qaratiladi. Shuningdek, biz ota-onalar bilan yaqin hamkorlikda ishlaymiz va ularning fikr-mulohazalarini inobatga olamiz.Har bir o‘quvchining muvaffaqiyati – bu bizning asosiy maqsadimiz. Shu sababli, maktabimizda qulay va do‘stona muhit yaratilgan. Biz o‘quvchilarimizning bilim olishga bo‘lgan ishtiyoqini oshirish va ularni kelajakda muvaffaqiyatli shaxs sifatida ko‘rishdan mamnunmiz. Maktab nafaqat ta’lim maskani, balki har bir o‘quvchi uchun orzularini amalga oshirish yo‘lida mustahkam poydevor yaratadigan joydir.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div id="about-swiper" class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img
+                  src="/media/document_img/photo_2023-04-03_12-02-20.jpg"
+                  alt="Hujjat rasmi"
+                  class="img-fluid mb-3"
+                />
+                <a href="/media/documents/photo_2023-04-03_12-02-28.jpg" target="_blank">
+                  Yuklab olish <i class="bi bi-download"></i>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="/media/document_img/maktab.jpg"
+                  alt="Hujjat rasmi"
+                  class="img-fluid mb-3"
+                />
+                <a href="/media/documents/maktab.jpg" target="_blank">
+                  Yuklab olish <i class="bi bi-download"></i>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="/media/document_img/photo_2023-04-03_12-02-28.jpg"
+                  alt="Hujjat rasmi"
+                  class="img-fluid mb-3"
+                />
+                <a href="/media/documents/photo_2023-04-03_12-02-20.jpg" target="_blank">
+                  Yuklab olish <i class="bi bi-download"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="static/main/js/about.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/static/main/js/about.js"></script> -->
 
-<!-- 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="/static/main/css/about.css" />
 
-<section id="about" class="container section py-5">
-  <div class="row align-items-center">
-    <div class="col-lg-6 mb-4 mb-lg-0">
-      <div class="card border-0 shadow-sm p-4 text-white bg-dark">
-        <h2 class="text-center mb-4" style="letter-spacing: 2px">
-          Biz haqimizda
-        </h2>
-        <p class="lead text-center">
-          Toshkent viloyati Angren Shahar 4-umumta'lim maktabi IT sohasiga
-          ixtisoslashgan.
-        </p>
-        <p class="about-text">Maktab bu bilim va tarbiya maskani bo‘lib, o‘quvchilarimizning intellektual, ma’naviy va jismoniy rivojlanishiga katta e’tibor qaratamiz. Bizning maqsadimiz – zamonaviy bilim va ko‘nikmalarni o‘rgatish bilan birga, o‘quvchilarni jamiyatga foydali, vatanparvar va mas’uliyatli shaxs sifatida shakllantirishdir.
-Maktabimizda malakali o‘qituvchilar jamoasi faoliyat olib boradi. Ular har bir o‘quvchining qobiliyatini rivojlantirishga yordam beradi. Shu bilan birga, zamonaviy o‘quv usullari va texnologiyalaridan foydalanib, ta’lim jarayonini yanada samarali qilamiz. Maktabimizda o‘quvchilar uchun turli to‘garaklar va tadbirlar tashkil etilib, ularning qobiliyatlari va qiziqishlarini rivojlantirishga katta ahamiyat qaratiladi. Shuningdek, biz ota-onalar bilan yaqin hamkorlikda ishlaymiz va ularning fikr-mulohazalarini inobatga olamiz.Har bir o‘quvchining muvaffaqiyati – bu bizning asosiy maqsadimiz. Shu sababli, maktabimizda qulay va do‘stona muhit yaratilgan. Biz o‘quvchilarimizning bilim olishga bo‘lgan ishtiyoqini oshirish va ularni kelajakda muvaffaqiyatli shaxs sifatida ko‘rishdan mamnunmiz. Maktab nafaqat ta’lim maskani, balki har bir o‘quvchi uchun orzularini amalga oshirish yo‘lida mustahkam poydevor yaratadigan joydir.</p>
-      </div>
-    </div>
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/main/css/gallery.css">
 
-    <div class="col-lg-6">
-      <div id="about-swiper" class="swiper-container">
+    <div id="gallery" class="swiper-container" style="scroll-margin-top: 5rem">
+        <h2 class="maktab-rasmlari">Maktab Rasmlari</h2>
         <div class="swiper-wrapper">
-          
-          <div class="swiper-slide">
-            <img
-              src="/media/document_img/photo_2023-04-03_12-02-20.jpg"
-              alt="Hujjat rasmi"
-              class="img-fluid mb-3"
-            />
-            <a href="/media/documents/photo_2023-04-03_12-02-28.jpg" target="_blank">
-              Yuklab olish <i class="bi bi-download"></i>
-            </a>
-          </div>
-          
-          <div class="swiper-slide">
-            <img
-              src="/media/document_img/maktab.jpg"
-              alt="Hujjat rasmi"
-              class="img-fluid mb-3"
-            />
-            <a href="/media/documents/maktab.jpg" target="_blank">
-              Yuklab olish <i class="bi bi-download"></i>
-            </a>
-          </div>
-          
-          <div class="swiper-slide">
-            <img
-              src="/media/document_img/photo_2023-04-03_12-02-28.jpg"
-              alt="Hujjat rasmi"
-              class="img-fluid mb-3"
-            />
-            <a href="/media/documents/photo_2023-04-03_12-02-20.jpg" target="_blank">
-              Yuklab olish <i class="bi bi-download"></i>
-            </a>
-          </div>
-          
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-06.jpg" alt="Slide 1">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-20.jpg" alt="Slide 2">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-24.jpg" alt="Slide 3">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-28.jpg" alt="Slide 4">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-34.jpg" alt="Slide 5">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-37.jpg" alt="Slide 6">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-41.jpg" alt="Slide 7">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-48.jpg" alt="Slide 8">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-57.jpg" alt="Slide 9">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-01.jpg" alt="Slide 10">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-09.jpg" alt="Slide 11">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-14.jpg" alt="Slide 12">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-33_ak2MvcJ.jpg" alt="Slide 13">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-37.jpg" alt="Slide 14">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-45.jpg" alt="Slide 15">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-03.jpg" alt="Slide 16">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-06.jpg" alt="Slide 17">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-35.jpg" alt="Slide 18">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-38.jpg" alt="Slide 19">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-19.jpg" alt="Slide 20">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-26.jpg" alt="Slide 21">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-34.jpg" alt="Slide 22">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-52.jpg" alt="Slide 23">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow"
+                     src="media/school_img/%D0%BA%D0%B8%D1%80%D0%B8%D1%88_%D2%9B%D0%B8%D1%81%D0%BC%D0%B81.jpg"
+                     alt="Slide 24">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow"
+                     src="media/school_img/%D0%BA%D0%B8%D1%80%D0%B8%D1%88_%D2%9B%D0%B8%D1%81%D0%BC%D0%B8.jpg"
+                     alt="Slide 25">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow"
+                     src="media/school_img/%D1%82%D0%B8%D0%B1%D0%B1%D0%B8%D1%91%D1%82_%D1%85%D0%BE%D0%BD%D0%B0%D1%81%D0%B8.jpg"
+                     alt="Slide 26">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/%D0%BA%D0%BE%D1%80%D1%80%D0%B8%D0%B4%D0%BE%D1%801.jpg"
+                     alt="Slide 27">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow"
+                     src="media/school_img/%D1%84%D0%B0%D0%BE%D0%BB%D0%BB%D0%B0%D1%80_%D0%B7%D0%B0%D0%BB%D0%B81.jpg"
+                     alt="Slide 28">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow"
+                     src="media/school_img/%D1%84%D0%B0%D0%BE%D0%BB%D0%BB%D0%B0%D1%80_%D0%B7%D0%B0%D0%BB%D0%B83.jpg"
+                     alt="Slide 29">
+            </div>
+
+            <div class="swiper-slide">
+                <img class="shadow" src="media/school_img/IMG_20250121_202626_428.jpg" alt="Slide 30">
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
-</section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="/static/main/js/about.js"></script> -->
+    <script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="static/main/js/gallery.js"></script>
 
-      
-<link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="static/main/css/gallery.css">
 
-<div id="gallery" class="swiper-container" style="scroll-margin-top: 5rem">
-  <h2 class="maktab-rasmlari">Maktab Rasmlari</h2>
-  <div class="swiper-wrapper">
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-06.jpg" alt="Slide 1">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-20.jpg" alt="Slide 2">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-24.jpg" alt="Slide 3">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-28.jpg" alt="Slide 4">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-34.jpg" alt="Slide 5">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-37.jpg" alt="Slide 6">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-41.jpg" alt="Slide 7">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-48.jpg" alt="Slide 8">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-02-57.jpg" alt="Slide 9">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-01.jpg" alt="Slide 10">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-09.jpg" alt="Slide 11">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-14.jpg" alt="Slide 12">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-33_ak2MvcJ.jpg" alt="Slide 13">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-37.jpg" alt="Slide 14">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-03-45.jpg" alt="Slide 15">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-03.jpg" alt="Slide 16">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-06.jpg" alt="Slide 17">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-35.jpg" alt="Slide 18">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-04-38.jpg" alt="Slide 19">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-19.jpg" alt="Slide 20">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-26.jpg" alt="Slide 21">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-34.jpg" alt="Slide 22">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/photo_2023-04-03_12-05-52.jpg" alt="Slide 23">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/%D0%BA%D0%B8%D1%80%D0%B8%D1%88_%D2%9B%D0%B8%D1%81%D0%BC%D0%B81.jpg" alt="Slide 24">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/%D0%BA%D0%B8%D1%80%D0%B8%D1%88_%D2%9B%D0%B8%D1%81%D0%BC%D0%B8.jpg" alt="Slide 25">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/%D1%82%D0%B8%D0%B1%D0%B1%D0%B8%D1%91%D1%82_%D1%85%D0%BE%D0%BD%D0%B0%D1%81%D0%B8.jpg" alt="Slide 26">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/%D0%BA%D0%BE%D1%80%D1%80%D0%B8%D0%B4%D0%BE%D1%801.jpg" alt="Slide 27">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/%D1%84%D0%B0%D0%BE%D0%BB%D0%BB%D0%B0%D1%80_%D0%B7%D0%B0%D0%BB%D0%B81.jpg" alt="Slide 28">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/%D1%84%D0%B0%D0%BE%D0%BB%D0%BB%D0%B0%D1%80_%D0%B7%D0%B0%D0%BB%D0%B83.jpg" alt="Slide 29">
-    </div>
-    
-    <div class="swiper-slide">
-      <img class="shadow" src="media/school_img/IMG_20250121_202626_428.jpg" alt="Slide 30">
-    </div>
-    
-  </div>
-</div>
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/main/css/teachers.css">
 
-<script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="static/main/js/gallery.js"></script>
+    <div id="teacher" class="container" style="scroll-margin-top: 10rem">
+        <div id="teachers" class="teachers-swiper-container container">
+            <h2 class="maktab-rasmlari text-white">Ustozlarimiz</h2>
+            <p class="text-center p-2 text-white mx-auto mb-5">
+                4 - sonli umumta'lim ustozlari nafaqat bilimdon, balki yoshlarni
+                tarbiyalashda, ularga ma'naviy va axloqiy qadriyatlarni singdirishda ham
+                o'zini namoyon qilgan mutaxassislardir. Har bir ustozimiz, ta'lim
+                jarayonida shaxsiy yondashuv va kreativ metodlarni qo'llab, har bir
+                o'quvchining ichki potentsialini ochishga intiladi. Bizning
+                ustozlarimizning har biri o'z sohasining ustalari bo'lib, har bir darsni
+                qiziqarli va samarali o'tkazishga harakat qilishadi.
+            </p>
+            <div class="swiper-wrapper">
 
-      
-<link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="static/main/css/teachers.css">
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_202909_290.jpg" alt="Zebo Abdujabborova">
+                    <h5 class="text-white">
+                        Zebo Abdujabborova
+                    </h5>
+                    <p class="text-white">Direktor o'rinbosari</p>
+                </div>
 
-<div id="teacher" class="container" style="scroll-margin-top: 10rem">
-  <div id="teachers" class="teachers-swiper-container container">
-    <h2 class="maktab-rasmlari text-white">Ustozlarimiz</h2>
-    <p class="text-center p-2 text-white mx-auto mb-5">
-      4 - sonli umumta'lim ustozlari nafaqat bilimdon, balki yoshlarni
-      tarbiyalashda, ularga ma'naviy va axloqiy qadriyatlarni singdirishda ham
-      o'zini namoyon qilgan mutaxassislardir. Har bir ustozimiz, ta'lim
-      jarayonida shaxsiy yondashuv va kreativ metodlarni qo'llab, har bir
-      o'quvchining ichki potentsialini ochishga intiladi. Bizning
-      ustozlarimizning har biri o'z sohasining ustalari bo'lib, har bir darsni
-      qiziqarli va samarali o'tkazishga harakat qilishadi.
-    </p>
-    <div class="swiper-wrapper">
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_202909_290.jpg" alt="Zebo Abdujabborova">
-        <h5 class="text-white">
-          Zebo Abdujabborova
-        </h5>
-        <p class="text-white">Direktor o'rinbosari</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/%D0%96%D0%B0%D0%BC%D1%88%D0%B8%D0%B4.jpg" alt="Jamshid Xudoyberdiyev">
-        <h5 class="text-white">
-          Jamshid Xudoyberdiyev
-        </h5>
-        <p class="text-white">Matematika</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/BAXTIYOR_AKA.jpg" alt="Baxtiyor Abduvaliyev">
-        <h5 class="text-white">
-          Baxtiyor Abduvaliyev
-        </h5>
-        <p class="text-white">Jismoniy tarbiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/maxfuza.jpg" alt="Mahfuza Nodirova">
-        <h5 class="text-white">
-          Mahfuza Nodirova
-        </h5>
-        <p class="text-white">Ona-tili va  Adabiyot</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/Ozim.jpg" alt="Dilnoza Ermatova">
-        <h5 class="text-white">
-          Dilnoza Ermatova
-        </h5>
-        <p class="text-white">Informatika</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/manzura.jpg" alt="Manzura Umrzakova">
-        <h5 class="text-white">
-          Manzura Umrzakova
-        </h5>
-        <p class="text-white">Ona tili va adabiyot</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_160130_615.jpg" alt="Maxbuba Urinbayeva">
-        <h5 class="text-white">
-          Maxbuba Urinbayeva
-        </h5>
-        <p class="text-white">Ilmiy mudir</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/Ravshan.jpg" alt="Ravshan Xasanov">
-        <h5 class="text-white">
-          Ravshan Xasanov
-        </h5>
-        <p class="text-white">Direktor</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/MUNISA.jpg" alt="Munisa Akbaraliyeva">
-        <h5 class="text-white">
-          Munisa Akbaraliyeva
-        </h5>
-        <p class="text-white">Matematika</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/SANJAR.jpg" alt="Sanjar Namozov">
-        <h5 class="text-white">
-          Sanjar Namozov
-        </h5>
-        <p class="text-white">Ilmiy mudir</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/NARGIZA.jpg" alt="Elova Nargiza">
-        <h5 class="text-white">
-          Elova Nargiza
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_171618_990.jpg" alt="Ra'no Razzakova">
-        <h5 class="text-white">
-          Ra'no Razzakova
-        </h5>
-        <p class="text-white">Ona tili va adabiyot</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/SARDOR.jpg" alt="Sardor Yangiyev">
-        <h5 class="text-white">
-          Sardor Yangiyev
-        </h5>
-        <p class="text-white">Jismoniy tarbiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_190613_853.jpg" alt="Kamola Ubaydullayeva">
-        <h5 class="text-white">
-          Kamola Ubaydullayeva
-        </h5>
-        <p class="text-white">Geografiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250122_070728_483.jpg" alt="Mahliyoxon Shamsutdinova">
-        <h5 class="text-white">
-          Mahliyoxon Shamsutdinova
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/DILBAROY.jpg" alt="Dilbaroy Sheraliyeva">
-        <h5 class="text-white">
-          Dilbaroy Sheraliyeva
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/dilfuz.jpg" alt="Dilfuza Abdullayeva">
-        <h5 class="text-white">
-          Dilfuza Abdullayeva
-        </h5>
-        <p class="text-white">Tarbiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/SANATXON_OPA.jpg" alt="San'atxon Raximova">
-        <h5 class="text-white">
-          San'atxon Raximova
-        </h5>
-        <p class="text-white">Ingliz tili</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/YULDOSH.jpg" alt="Yuldosh Jo'raqulov">
-        <h5 class="text-white">
-          Yuldosh Jo'raqulov
-        </h5>
-        <p class="text-white">Jismoniy tarbiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/MUHABBAT.jpg" alt="Muxabbat Sabdinova">
-        <h5 class="text-white">
-          Muxabbat Sabdinova
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/XILOLA.jpg" alt="Xilola Mirzayeva">
-        <h5 class="text-white">
-          Xilola Mirzayeva
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_171608_433.jpg" alt="Dilorom Mirzaxmedova">
-        <h5 class="text-white">
-          Dilorom Mirzaxmedova
-        </h5>
-        <p class="text-white">Oliy toifali Biologiya o'qit.</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_171629_833.jpg" alt="Feruza Mirzamamatova">
-        <h5 class="text-white">
-          Feruza Mirzamamatova
-        </h5>
-        <p class="text-white">Jismoniy tarbiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_180641_626.jpg" alt="Dildora Eshmirzayeva">
-        <h5 class="text-white">
-          Dildora Eshmirzayeva
-        </h5>
-        <p class="text-white">Informatika</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_180353_588.jpg" alt="Sitora Abdivaliyeva">
-        <h5 class="text-white">
-          Sitora Abdivaliyeva
-        </h5>
-        <p class="text-white">Chizmachilik</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_201458_820.jpg" alt="Munojat Usmanova">
-        <h5 class="text-white">
-          Munojat Usmanova
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250121_201525_058.jpg" alt="Xumora Suleymanova">
-        <h5 class="text-white">
-          Xumora Suleymanova
-        </h5>
-        <p class="text-white">Tarbiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/gulnora.jpg" alt="Gulnora Qarshiboyeva">
-        <h5 class="text-white">
-          Gulnora Qarshiboyeva
-        </h5>
-        <p class="text-white">Biologiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/IMG_20250122_185442_984.jpg" alt="Sayniso Babaraximova">
-        <h5 class="text-white">
-          Sayniso Babaraximova
-        </h5>
-        <p class="text-white">Rus tili</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/gulchehra.jpg" alt="Gulchexra Raxmanova">
-        <h5 class="text-white">
-          Gulchexra Raxmanova
-        </h5>
-        <p class="text-white">Fizika</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/dilruz.jpg" alt="Dilro'za Nigmatova">
-        <h5 class="text-white">
-          Dilro'za Nigmatova
-        </h5>
-        <p class="text-white">Texnologiya</p>
-      </div>
-      
-      <div class="swiper-slide">
-        <img class="shadow" src="media/teacher_img/Roza_BRGS7FR.jpg" alt="Ro'za Reymberdiyeva">
-        <h5 class="text-white">
-          Ro'za Reymberdiyeva
-        </h5>
-        <p class="text-white">Boshlang'ich</p>
-      </div>
-      
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/%D0%96%D0%B0%D0%BC%D1%88%D0%B8%D0%B4.jpg"
+                         alt="Jamshid Xudoyberdiyev">
+                    <h5 class="text-white">
+                        Jamshid Xudoyberdiyev
+                    </h5>
+                    <p class="text-white">Matematika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/BAXTIYOR_AKA.jpg" alt="Baxtiyor Abduvaliyev">
+                    <h5 class="text-white">
+                        Baxtiyor Abduvaliyev
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/maxfuza.jpg" alt="Mahfuza Nodirova">
+                    <h5 class="text-white">
+                        Mahfuza Nodirova
+                    </h5>
+                    <p class="text-white">Ona-tili va Adabiyot</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/Ozim.jpg" alt="Dilnoza Ermatova">
+                    <h5 class="text-white">
+                        Dilnoza Ermatova
+                    </h5>
+                    <p class="text-white">Informatika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/manzura.jpg" alt="Manzura Umrzakova">
+                    <h5 class="text-white">
+                        Manzura Umrzakova
+                    </h5>
+                    <p class="text-white">Ona tili va adabiyot</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_160130_615.jpg" alt="Maxbuba Urinbayeva">
+                    <h5 class="text-white">
+                        Maxbuba Urinbayeva
+                    </h5>
+                    <p class="text-white">Ilmiy mudir</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/Ravshan.jpg" alt="Ravshan Xasanov">
+                    <h5 class="text-white">
+                        Ravshan Xasanov
+                    </h5>
+                    <p class="text-white">Direktor</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/MUNISA.jpg" alt="Munisa Akbaraliyeva">
+                    <h5 class="text-white">
+                        Munisa Akbaraliyeva
+                    </h5>
+                    <p class="text-white">Matematika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/SANJAR.jpg" alt="Sanjar Namozov">
+                    <h5 class="text-white">
+                        Sanjar Namozov
+                    </h5>
+                    <p class="text-white">Ilmiy mudir</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/NARGIZA.jpg" alt="Elova Nargiza">
+                    <h5 class="text-white">
+                        Elova Nargiza
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_171618_990.jpg" alt="Ra'no Razzakova">
+                    <h5 class="text-white">
+                        Ra'no Razzakova
+                    </h5>
+                    <p class="text-white">Ona tili va adabiyot</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/SARDOR.jpg" alt="Sardor Yangiyev">
+                    <h5 class="text-white">
+                        Sardor Yangiyev
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_190613_853.jpg" alt="Kamola Ubaydullayeva">
+                    <h5 class="text-white">
+                        Kamola Ubaydullayeva
+                    </h5>
+                    <p class="text-white">Geografiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250122_070728_483.jpg"
+                         alt="Mahliyoxon Shamsutdinova">
+                    <h5 class="text-white">
+                        Mahliyoxon Shamsutdinova
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/DILBAROY.jpg" alt="Dilbaroy Sheraliyeva">
+                    <h5 class="text-white">
+                        Dilbaroy Sheraliyeva
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/dilfuz.jpg" alt="Dilfuza Abdullayeva">
+                    <h5 class="text-white">
+                        Dilfuza Abdullayeva
+                    </h5>
+                    <p class="text-white">Tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/SANATXON_OPA.jpg" alt="San'atxon Raximova">
+                    <h5 class="text-white">
+                        San'atxon Raximova
+                    </h5>
+                    <p class="text-white">Ingliz tili</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/YULDOSH.jpg" alt="Yuldosh Jo'raqulov">
+                    <h5 class="text-white">
+                        Yuldosh Jo'raqulov
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/MUHABBAT.jpg" alt="Muxabbat Sabdinova">
+                    <h5 class="text-white">
+                        Muxabbat Sabdinova
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/XILOLA.jpg" alt="Xilola Mirzayeva">
+                    <h5 class="text-white">
+                        Xilola Mirzayeva
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_171608_433.jpg" alt="Dilorom Mirzaxmedova">
+                    <h5 class="text-white">
+                        Dilorom Mirzaxmedova
+                    </h5>
+                    <p class="text-white">Oliy toifali Biologiya o'qit.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_171629_833.jpg" alt="Feruza Mirzamamatova">
+                    <h5 class="text-white">
+                        Feruza Mirzamamatova
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_180641_626.jpg" alt="Dildora Eshmirzayeva">
+                    <h5 class="text-white">
+                        Dildora Eshmirzayeva
+                    </h5>
+                    <p class="text-white">Informatika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_180353_588.jpg" alt="Sitora Abdivaliyeva">
+                    <h5 class="text-white">
+                        Sitora Abdivaliyeva
+                    </h5>
+                    <p class="text-white">Chizmachilik</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_201458_820.jpg" alt="Munojat Usmanova">
+                    <h5 class="text-white">
+                        Munojat Usmanova
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250121_201525_058.jpg" alt="Xumora Suleymanova">
+                    <h5 class="text-white">
+                        Xumora Suleymanova
+                    </h5>
+                    <p class="text-white">Tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/gulnora.jpg" alt="Gulnora Qarshiboyeva">
+                    <h5 class="text-white">
+                        Gulnora Qarshiboyeva
+                    </h5>
+                    <p class="text-white">Biologiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/IMG_20250122_185442_984.jpg" alt="Sayniso Babaraximova">
+                    <h5 class="text-white">
+                        Sayniso Babaraximova
+                    </h5>
+                    <p class="text-white">Rus tili</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/gulchehra.jpg" alt="Gulchexra Raxmanova">
+                    <h5 class="text-white">
+                        Gulchexra Raxmanova
+                    </h5>
+                    <p class="text-white">Fizika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/dilruz.jpg" alt="Dilro'za Nigmatova">
+                    <h5 class="text-white">
+                        Dilro'za Nigmatova
+                    </h5>
+                    <p class="text-white">Texnologiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="shadow" src="media/teacher_img/Roza_BRGS7FR.jpg" alt="Ro'za Reymberdiyeva">
+                    <h5 class="text-white">
+                        Ro'za Reymberdiyeva
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-<script src="static/main/js/teachers.js"></script>
+    <script src="static/main/js/teachers.js"></script>
 
-      
-<link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-<link rel="stylesheet" href="static/main/css/news.css">
 
-<section id="news" class="container mb-5" style="scroll-margin-top: 9rem; margin-top: 150px">
-  <h2 class="text-center card-title text-dark mb-5">Yangiliklar</h2>
-  <div id="newsSwiper" class="swiper">
-    <div class="swiper-wrapper">
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/sport.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Sport</h5>
-            <p class="card-text">
-              ANGREN SHAHAR 4-IDUMDA
-O'QUVCHILARNING QISHKI TA'TILINI SAMARALI TASHKIL ETISH MAQSADIDA O'QUVCHILA<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Sport" data-text="ANGREN SHAHAR 4-IDUMDA
+    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/main/css/news.css">
+
+    <section id="news" class="container mb-5" style="scroll-margin-top: 9rem; margin-top: 150px">
+        <h2 class="text-center card-title text-dark mb-5">Yangiliklar</h2>
+        <div id="newsSwiper" class="swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/sport.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Sport</h5>
+                            <p class="card-text">
+                                ANGREN SHAHAR 4-IDUMDA
+                                O'QUVCHILARNING QISHKI TA'TILINI SAMARALI TASHKIL ETISH MAQSADIDA O'QUVCHILA<span
+                                    class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Sport" data-text="ANGREN SHAHAR 4-IDUMDA
 O'QUVCHILARNING QISHKI TA'TILINI SAMARALI TASHKIL ETISH MAQSADIDA O'QUVCHILARGA SPORTNING VOLLEYBOL, BASKETBOL, YENGIL ATLETIKA, SHAXMAT VA SHASHKA TO'GARAKLARI TASHKIL ETILDI.
 
 ✔️TO'GARAKLARDA O'QUVCHILAR QISHKI TA'TIL VAQTINI MAZMUNLI VA ZAVQLI O'TKAZISHMOQDA.
@@ -665,590 +703,686 @@ O'QUVCHILARNING QISHKI TA'TILINI SAMARALI TASHKIL ETISH MAQSADIDA O'QUVCHILARGA 
 ✨TO'GARAK RAHBARLARI:
         ABDUVALIYEV B.
         MIRZAMAMATOVA F." data-img="/media/news/sport.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250123_110336_277.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tabriklaymiz !!!</h5>
-            <p class="card-text">
-              💐💐💐💐💐💐💐💐💐💐💐💐Boshlang'ich sinf ustozimiz Elova Nargiza Milliy sertifikat B darajasi egasi bo'ldi. Ust<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tabriklaymiz !!!" data-text="💐💐💐💐💐💐💐💐💐💐💐💐Boshlang'ich sinf ustozimiz Elova Nargiza Milliy sertifikat B darajasi egasi bo'ldi. Ustozimizni tabriklaymiz!!! Yutuqlaringiz bardavom bo'lsin💐💐💐" data-img="/media/news/IMG_20250123_110336_277.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/YANG.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">YANGI YIL</h5>
-            <p class="card-text">
-              ANGREN SHAHAR 4-IDUMDA
-27-DEKABR KUNI MAKTAB MA'MURIYATI TOMONIDAN USHBU MAKTABDA TA'LIM OLAYOTGAN <span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="YANGI YIL" data-text="ANGREN SHAHAR 4-IDUMDA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250123_110336_277.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tabriklaymiz !!!</h5>
+                            <p class="card-text">
+                                💐💐💐💐💐💐💐💐💐💐💐💐Boshlang'ich sinf ustozimiz Elova Nargiza Milliy sertifikat B darajasi egasi
+                                bo'ldi. Ust<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tabriklaymiz !!!"
+                                      data-text="💐💐💐💐💐💐💐💐💐💐💐💐Boshlang'ich sinf ustozimiz Elova Nargiza Milliy sertifikat B darajasi egasi bo'ldi. Ustozimizni tabriklaymiz!!! Yutuqlaringiz bardavom bo'lsin💐💐💐"
+                                      data-img="/media/news/IMG_20250123_110336_277.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/YANG.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">YANGI YIL</h5>
+                            <p class="card-text">
+                                ANGREN SHAHAR 4-IDUMDA
+                                27-DEKABR KUNI MAKTAB MA'MURIYATI TOMONIDAN USHBU MAKTABDA TA'LIM OLAYOTGAN <span
+                                    class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="YANGI YIL" data-text="ANGREN SHAHAR 4-IDUMDA
 27-DEKABR KUNI MAKTAB MA'MURIYATI TOMONIDAN USHBU MAKTABDA TA'LIM OLAYOTGAN IJTIMOIY HIMOYAGA MUHTOJ OILA FARZANDLARIGA  YANGI YIL SOVG'ALARI BERILDI.
 
 🧸SOVG'ALAR MAKTAB RAHBARI
 R. R. XASANOV VA QORBOBO ISHTIROKIDA BOLAJONLARGA ULASHILDI.
 
 🎁SOVG'A OLGAN BOLAJONLAR QORBOBOGA SHE'RLAR AYTIB O'Z MINNATDORCHILIGINI BILDIRISHDI." data-img="/media/news/YANG.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250121_212325_875.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">"Jadidlar va qatog'on siyosati"</h5>
-            <p class="card-text">
-              Angren shahar 4-IDUM 9-D sinf o'quvchilari bilan O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyo<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="" jadidlar="" va="" qatog'on="" siyosati""="" data-text="Angren shahar 4-IDUM 9-D sinf o'quvchilari bilan O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyevning 2024-yil 19-iyuldagi " siyosiy="" qatag‘on="" qurboni="" bo‘lgan="" yurtdoshlarimizning="" hayoti="" faoliyatini="" o‘rganish="" hamda="" ularning="" xotirasini="" abadiylashtirish="" borasidagi="" ishlarini="" kengaytirish="" toʻgʻrisida"gi="" qarori="" ijrosini="" ta'minlash="" maqsadida="" "jadidlar="" qatagʻon="" siyosati"="" mavzusida="" davra="" suhbati="" tashkil="" etildi.="" mazkur="" suhbat="" davomida="" o'quvchilar="" jadidchilik="" harakati="" uning="" ma'naviy-madaniy="" merosi,="" shaxslarning="" o‘rganish,="" tarixiy="" xizmatlari="" haqidagi="" ma’lumotlarga="" ega="" bo‘lishdi."="" data-img="/media/news/IMG_20250121_212325_875.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/14_yanv.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">4-IDUMda 14-Yanvar</h5>
-            <p class="card-text">
-              4-IDUMDA "14-YANVAR VATAN HIMOYACHILARI KUNI" MUNOSABATI BILAN  MAKTABIMIZNING ERKAK O'QITUVCHILARIG<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="4-IDUMda 14-Yanvar" data-text="4-IDUMDA " 14-yanvar="" vatan="" himoyachilari="" kuni"="" munosabati="" bilan="" maktabimizning="" erkak="" o'qituvchilariga="" bayramona="" kayfiyat="" ulashish="" maqsadida="" o'quvchilar="" tomonidan="" kutib="" olindi="" va="" tabrik="" xatlari="" ulashildi."="" data-img="/media/news/14_yanv.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250121_211559_073.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">14- yanvar</h5>
-            <p class="card-text">
-              Angren shahar 4-IDUM 9 D sinf o'quvchilari ishtirokida o'tkazilgan "Men ham askar bo'laman" deb noml<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="14- yanvar" data-text="Angren shahar 4-IDUM 9 D sinf o'quvchilari ishtirokida o'tkazilgan " men="" ham="" askar="" bo'laman"="" deb="" nomlangan="" tadbirdan="" lavhalar."="" data-img="/media/news/IMG_20250121_211559_073.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250123_112444_159.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tabriklaymiz!!!</h5>
-            <p class="card-text">
-              💐💐💐💐💐💐💐💐💐💐💐💐
-Ingliz tili ustozimiz Raimjonov G'iyosiddin IELTS C1 darajali sertifikat egasi bo'ldi.<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tabriklaymiz!!!" data-text="💐💐💐💐💐💐💐💐💐💐💐💐
-Ingliz tili ustozimiz Raimjonov G'iyosiddin IELTS C1 darajali sertifikat egasi bo'ldi. Ustozimizni tabriklaymiz yutuqlaringiz bardavom bo'lsin!!!💐💐💐" data-img="/media/news/IMG_20250123_112444_159.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250123_114019_214.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tabriklaymiz!!!</h5>
-            <p class="card-text">
-              ANGREN_SHAHAR_MMTB
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250121_212325_875.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">"Jadidlar va qatog'on siyosati"</h5>
+                            <p class="card-text">
+                                Angren shahar 4-IDUM 9-D sinf o'quvchilari bilan O‘zbekiston Respublikasi Prezidenti
+                                Shavkat Mirziyo<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title=""
+                                      jadidlar="" va="" qatog'on="" siyosati""="" data-text="Angren shahar 4-IDUM 9-D
+                                sinf o'quvchilari bilan O‘zbekiston Respublikasi Prezidenti Shavkat Mirziyoyevning
+                                2024-yil 19-iyuldagi " siyosiy="" qatag‘on="" qurboni="" bo‘lgan=""
+                                yurtdoshlarimizning="" hayoti="" faoliyatini="" o‘rganish="" hamda="" ularning=""
+                                xotirasini="" abadiylashtirish="" borasidagi="" ishlarini="" kengaytirish=""
+                                toʻgʻrisida"gi="" qarori="" ijrosini="" ta'minlash="" maqsadida="" "jadidlar=""
+                                qatagʻon="" siyosati"="" mavzusida="" davra="" suhbati="" tashkil="" etildi.=""
+                                mazkur="" suhbat="" davomida="" o'quvchilar="" jadidchilik="" harakati="" uning=""
+                                ma'naviy-madaniy="" merosi,="" shaxslarning="" o‘rganish,="" tarixiy="" xizmatlari=""
+                                haqidagi="" ma’lumotlarga="" ega="" bo‘lishdi."=""
+                                data-img="/media/news/IMG_20250121_212325_875.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/14_yanv.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">4-IDUMda 14-Yanvar</h5>
+                            <p class="card-text">
+                                4-IDUMDA "14-YANVAR VATAN HIMOYACHILARI KUNI" MUNOSABATI BILAN MAKTABIMIZNING ERKAK
+                                O'QITUVCHILARIG<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="4-IDUMda 14-Yanvar" data-text="4-IDUMDA " 14-yanvar="" vatan=""
+                                      himoyachilari="" kuni"="" munosabati="" bilan="" maktabimizning="" erkak=""
+                                o'qituvchilariga="" bayramona="" kayfiyat="" ulashish="" maqsadida="" o'quvchilar=""
+                                tomonidan="" kutib="" olindi="" va="" tabrik="" xatlari="" ulashildi."=""
+                                data-img="/media/news/14_yanv.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250121_211559_073.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">14- yanvar</h5>
+                            <p class="card-text">
+                                Angren shahar 4-IDUM 9 D sinf o'quvchilari ishtirokida o'tkazilgan "Men ham askar
+                                bo'laman" deb noml<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="14- yanvar"
+                                      data-text="Angren shahar 4-IDUM 9 D sinf o'quvchilari ishtirokida o'tkazilgan "
+                                      men="" ham="" askar="" bo'laman"="" deb="" nomlangan="" tadbirdan="" lavhalar."=""
+                                data-img="/media/news/IMG_20250121_211559_073.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250123_112444_159.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tabriklaymiz!!!</h5>
+                            <p class="card-text">
+                                💐💐💐💐💐💐💐💐💐💐💐💐
+                                Ingliz tili ustozimiz Raimjonov G'iyosiddin IELTS C1 darajali sertifikat egasi
+                                bo'ldi.<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tabriklaymiz!!!" data-text="💐💐💐💐💐💐💐💐💐💐💐💐
+Ingliz tili ustozimiz Raimjonov G'iyosiddin IELTS C1 darajali sertifikat egasi bo'ldi. Ustozimizni tabriklaymiz yutuqlaringiz bardavom bo'lsin!!!💐💐💐"
+                                      data-img="/media/news/IMG_20250123_112444_159.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250123_114019_214.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tabriklaymiz!!!</h5>
+                            <p class="card-text">
+                                ANGREN_SHAHAR_MMTB
+                                4_IDUM
+                                MILLIY_SERTIFIKAT
+
+                                ☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 10-<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tabriklaymiz!!!" data-text="ANGREN_SHAHAR_MMTB
 4_IDUM
 MILLIY_SERTIFIKAT
 
-☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 10-<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tabriklaymiz!!!" data-text="ANGREN_SHAHAR_MMTB
+☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 10-B SINF O'QUVCHISI RAIMJONOV MUXSINJON MATEMATIKA FANIDAN " c+"=""
+                                daraja="" milliy="" sertifikati="" sohibi="" bo'ldi.="" 💎ushbu="" o'quvchimizni=""
+                                tabriklaymiz,="" kelajakda="" bundanda="" yuqori="" natijalarga="" va="" yutuqlarga=""
+                                erishishida="" tilakdoshmiz.="" https:="" t.me="" angren4mk="" 🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆"=""
+                                data-img="/media/news/IMG_20250123_114019_214.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250127_134254_384.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tanlov!!!</h5>
+                            <p class="card-text">
+                                2025-yil 27 yanvar kuni 4-IDUM 8-9-10-11 sinflar o'rtasida jadid harakati asoschisi
+                                Mahmudxoja Behbu<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tanlov!!!"
+                                      data-text="2025-yil 27 yanvar kuni 4-IDUM 8-9-10-11 sinflar o'rtasida jadid harakati asoschisi Mahmudxoja Behbudiyning 150 yilligini munosib kutib olish maqsadida"
+                                      behbudiy-="" jadid="" harakati="" asoschisi"mavzusida="" insholar="" tanlovi=""
+                                o'tkazildi"="" data-img="/media/news/IMG_20250127_134254_384.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250201_095327_858.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Ekologik tanlov</h5>
+                            <p class="card-text">
+                                Angren shahar MMTBga qarashli 4-IDUMda 30-Yanvar kuni 4-sektor maktablar o'rtasida "Siz
+                                ekolgiyaga o<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Ekologik tanlov"
+                                      data-text="Angren shahar MMTBga qarashli 4-IDUMda 30-Yanvar kuni 4-sektor maktablar o'rtasida "
+                                      siz="" ekolgiyaga="" oid="" qonunlarni="" bilasizmi?"="" mavzusida="" hudud=""
+                                bosqichi="" bo'lib="" o'tdi.="" ushbu="" tanlovda="" 4,="" 10,="" 11,="" 12,="" 16,=""
+                                18,="" 30-="" maktab="" o'quvchilari="" o'zaro="" bellashdilar.="" 4-idumning="" 9-b=""
+                                sinf="" "nihol"="" jamoasi="" faol="" ishtirok="" etib="" faxrli="" 2-o'rinni=""
+                                qo'lga="" kiritishdi.="" tanlov="" so'ngida="" g'olib="" jamoalar="" tashkilotchilar=""
+                                tomonidan="" taqdirlanishdi.="" shuningdek,="" maktabimiz="" rahbariyati="" ham=""
+                                biologiya="" fani="" o'qituvchisi="" qarshiboyeva="" gulnora="" ustozga="" o'z=""
+                                minnatdorchiligini="" bildirishdi."=""
+                                data-img="/media/news/IMG_20250201_095327_858.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250125_100742_541.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tabriklaymiz!!!</h5>
+                            <p class="card-text">
+                                ANGREN_SHAHAR_MMTB
+                                4_IDUM
+                                MILLIY_SERTIFIKAT
+
+                                ☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 11-<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tabriklaymiz!!!" data-text="ANGREN_SHAHAR_MMTB
 4_IDUM
 MILLIY_SERTIFIKAT
 
-☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 10-B SINF O'QUVCHISI RAIMJONOV MUXSINJON MATEMATIKA FANIDAN " c+"="" daraja="" milliy="" sertifikati="" sohibi="" bo'ldi.="" 💎ushbu="" o'quvchimizni="" tabriklaymiz,="" kelajakda="" bundanda="" yuqori="" natijalarga="" va="" yutuqlarga="" erishishida="" tilakdoshmiz.="" https:="" t.me="" angren4mk="" 🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆"="" data-img="/media/news/IMG_20250123_114019_214.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250127_134254_384.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tanlov!!!</h5>
-            <p class="card-text">
-              2025-yil 27 yanvar kuni 4-IDUM 8-9-10-11 sinflar o'rtasida jadid harakati asoschisi Mahmudxoja Behbu<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tanlov!!!" data-text="2025-yil 27 yanvar kuni 4-IDUM 8-9-10-11 sinflar o'rtasida jadid harakati asoschisi Mahmudxoja Behbudiyning 150 yilligini munosib kutib olish maqsadida" behbudiy-="" jadid="" harakati="" asoschisi"mavzusida="" insholar="" tanlovi="" o'tkazildi"="" data-img="/media/news/IMG_20250127_134254_384.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250201_095327_858.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Ekologik tanlov</h5>
-            <p class="card-text">
-              Angren shahar MMTBga qarashli 4-IDUMda 30-Yanvar kuni 4-sektor maktablar o'rtasida "Siz ekolgiyaga o<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Ekologik tanlov" data-text="Angren shahar MMTBga qarashli 4-IDUMda 30-Yanvar kuni 4-sektor maktablar o'rtasida " siz="" ekolgiyaga="" oid="" qonunlarni="" bilasizmi?"="" mavzusida="" hudud="" bosqichi="" bo'lib="" o'tdi.="" ushbu="" tanlovda="" 4,="" 10,="" 11,="" 12,="" 16,="" 18,="" 30-="" maktab="" o'quvchilari="" o'zaro="" bellashdilar.="" 4-idumning="" 9-b="" sinf="" "nihol"="" jamoasi="" faol="" ishtirok="" etib="" faxrli="" 2-o'rinni="" qo'lga="" kiritishdi.="" tanlov="" so'ngida="" g'olib="" jamoalar="" tashkilotchilar="" tomonidan="" taqdirlanishdi.="" shuningdek,="" maktabimiz="" rahbariyati="" ham="" biologiya="" fani="" o'qituvchisi="" qarshiboyeva="" gulnora="" ustozga="" o'z="" minnatdorchiligini="" bildirishdi."="" data-img="/media/news/IMG_20250201_095327_858.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250125_100742_541.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tabriklaymiz!!!</h5>
-            <p class="card-text">
-              ANGREN_SHAHAR_MMTB
-4_IDUM
-MILLIY_SERTIFIKAT
+☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 11-A SINF O'QUVCHISI MIRISLOMOVA MEHRIBON MIRAZIZ QIZI INGLIZ TILI FANIDAN "
+                                      b2"="" daraja="" milliy="" sertifikati="" sohibi="" bo'ldi.="" 💎ushbu=""
+                                o'quvchimizni="" tabriklaymiz,="" kelajakda="" bundanda="" yuqori="" natijalarga=""
+                                va="" yutuqlarga="" erishishida="" tilakdoshmiz."=""
+                                data-img="/media/news/IMG_20250125_100742_541.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 11-<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tabriklaymiz!!!" data-text="ANGREN_SHAHAR_MMTB
-4_IDUM
-MILLIY_SERTIFIKAT
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250207_172511_195.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Ragʻbatlantirish</h5>
+                            <p class="card-text">
+                                Angren shahar 4-AFCHO'M maktabining 1-"G" sinf o'quvchilarining rag'batlantirish
+                                doskasi.<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Ragʻbatlantirish" data-text="Angren shahar 4-AFCHO'M maktabining 1-" g"=""
+                                sinf="" o'quvchilarining="" rag'batlantirish="" doskasi."=""
+                                data-img="/media/news/IMG_20250207_172511_195.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-☄️ TOSHKENT VILOYAT ANGREN SHAHAR 4-IDUMNING 11-A SINF O'QUVCHISI MIRISLOMOVA MEHRIBON MIRAZIZ QIZI INGLIZ TILI FANIDAN " b2"="" daraja="" milliy="" sertifikati="" sohibi="" bo'ldi.="" 💎ushbu="" o'quvchimizni="" tabriklaymiz,="" kelajakda="" bundanda="" yuqori="" natijalarga="" va="" yutuqlarga="" erishishida="" tilakdoshmiz."="" data-img="/media/news/IMG_20250125_100742_541.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250207_172511_195.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Ragʻbatlantirish</h5>
-            <p class="card-text">
-              Angren shahar 4-AFCHO'M maktabining 1-"G" sinf o'quvchilarining rag'batlantirish doskasi.<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Ragʻbatlantirish" data-text="Angren shahar 4-AFCHO'M maktabining 1-" g"="" sinf="" o'quvchilarining="" rag'batlantirish="" doskasi."="" data-img="/media/news/IMG_20250207_172511_195.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250207_173329_897.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tadbirlar</h5>
-            <p class="card-text">
-              Angren shahar 4-AFCHOʻM
- 6"A" -sinf oʻquvchilarining Alisher Navoiy tavalludining 584 yilligiga bag<span class="dots">...</span>
-              <span 584="" class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tadbirlar" data-text="Angren shahar 4-AFCHOʻM
- 6" a"="" -sinf="" oʻquvchilarining="" alisher="" navoiy="" tavalludining="" yilligiga="" bagʻishlangan="" tadbiridan="" lavhalar"="" data-img="/media/news/IMG_20250207_173329_897.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/IMG_20250207_174452_411.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Milliy liboslar kuni</h5>
-            <p class="card-text">
-              ANGREN_SHAHAR_MMTB
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250207_173329_897.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tadbirlar</h5>
+                            <p class="card-text">
+                                Angren shahar 4-AFCHOʻM
+                                6"A" -sinf oʻquvchilarining Alisher Navoiy tavalludining 584 yilligiga bag<span
+                                    class="dots">...</span>
+                                <span 584="" class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tadbirlar" data-text="Angren shahar 4-AFCHOʻM
+ 6" a"="" -sinf="" oʻquvchilarining="" alisher="" navoiy="" tavalludining="" yilligiga="" bagʻishlangan="" tadbiridan=""
+                                lavhalar"="" data-img="/media/news/IMG_20250207_173329_897.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/IMG_20250207_174452_411.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Milliy liboslar kuni</h5>
+                            <p class="card-text">
+                                ANGREN_SHAHAR_MMTB
+                                4_maktab
+                                Milliy_liboslar_chellenji
+
+
+                                📊ANGREN SHAHAR 4-SONLI AYRIM FANLAR<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Milliy liboslar kuni" data-text="ANGREN_SHAHAR_MMTB
 4_maktab
 Milliy_liboslar_chellenji
 
 
-📊ANGREN SHAHAR 4-SONLI AYRIM FANLAR<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Milliy liboslar kuni" data-text="ANGREN_SHAHAR_MMTB
-4_maktab
-Milliy_liboslar_chellenji
+📊ANGREN SHAHAR 4-SONLI AYRIM FANLARNI CHUQURLASHTIRILIB O'QITILADIGAN MAKTABDA " milliy="" liboslar"="" kuni=""
+                                munosabati="" bilan="" maktab="" o'quvchilari="" va="" o'qituvchilari="" tomonidan=""
+                                kiyimlar="" chellenji="" o'tkazildi.="" ✨bu="" chellenjdan="" maqsad ="" urf=""
+                                odatlarimiz="" o'zbekona="" liboslarimizni="" targ'ib="" qilishdir.="" ➡️https:=""
+                                t.me="" angren4mk"="" data-img="/media/news/IMG_20250207_174452_411.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/1000080556.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Tabriklaymiz</h5>
+                            <p class="card-text">
+                                ANGREN_SHAHAR_MMTB
+                                4_maktab
+                                Tabrik
 
-📊ANGREN SHAHAR 4-SONLI AYRIM FANLARNI CHUQURLASHTIRILIB O'QITILADIGAN MAKTABDA " milliy="" liboslar"="" kuni="" munosabati="" bilan="" maktab="" o'quvchilari="" va="" o'qituvchilari="" tomonidan="" kiyimlar="" chellenji="" o'tkazildi.="" ✨bu="" chellenjdan="" maqsad ="" urf="" odatlarimiz="" o'zbekona="" liboslarimizni="" targ'ib="" qilishdir.="" ➡️https:="" t.me="" angren4mk"="" data-img="/media/news/IMG_20250207_174452_411.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/1000080556.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Tabriklaymiz</h5>
-            <p class="card-text">
-              ANGREN_SHAHAR_MMTB
+                                💥Angren shahar 4-sonli AFCHO'Mning 11-"A" sinf o'quvchis<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Tabriklaymiz" data-text="ANGREN_SHAHAR_MMTB
 4_maktab
 Tabrik
 
-💥Angren shahar 4-sonli AFCHO'Mning 11-"A" sinf o'quvchis<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Tabriklaymiz" data-text="ANGREN_SHAHAR_MMTB
-4_maktab
-Tabrik
+💥Angren shahar 4-sonli AFCHO'Mning 11-" a"="" sinf="" o'quvchisi="" bozorboyeva="" nargiza="" "chet="" tilini=""
+                                bilish="" darajasi="" to'g'risida"gi="" "b2"="" darajadagi="" milliy="" sertifikatga=""
+                                ega="" bo'ldi.="" ushbu="" sertifikat="" o'quvchiga="" oliy="" o'quv="" yurtiga=""
+                                imtixon="" topshirganda="" ingliz="" tili="" fanidan="" maksimal="" ball=""
+                                imtiyozini="" beradi.="" o'quvchi="" qizimizga="" omad="" tilagan="" holda,=""
+                                bundanda="" yuqori="" natijalarga="" va="" yutuqlarga="" erishishini="" tilab=""
+                                qolamiz.="" 🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰"="" data-img="/media/news/1000080556.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-💥Angren shahar 4-sonli AFCHO'Mning 11-" a"="" sinf="" o'quvchisi="" bozorboyeva="" nargiza="" "chet="" tilini="" bilish="" darajasi="" to'g'risida"gi="" "b2"="" darajadagi="" milliy="" sertifikatga="" ega="" bo'ldi.="" ushbu="" sertifikat="" o'quvchiga="" oliy="" o'quv="" yurtiga="" imtixon="" topshirganda="" ingliz="" tili="" fanidan="" maksimal="" ball="" imtiyozini="" beradi.="" o'quvchi="" qizimizga="" omad="" tilagan="" holda,="" bundanda="" yuqori="" natijalarga="" va="" yutuqlarga="" erishishini="" tilab="" qolamiz.="" 🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰🔰"="" data-img="/media/news/1000080556.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/1000080557.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">Kasbiy rivojlanish soati</h5>
-            <p class="card-text">
-              Angren_shahar
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/1000080557.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">Kasbiy rivojlanish soati</h5>
+                            <p class="card-text">
+                                Angren_shahar
+                                4_maktab
+                                Kasbiy_rivojlanish_soati
+
+                                ⚡️Angren shahar 4-AFCHOʻM ning Boshlangʻich <span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="Kasbiy rivojlanish soati" data-text="Angren_shahar
 4_maktab
 Kasbiy_rivojlanish_soati
 
-⚡️Angren shahar 4-AFCHOʻM ning Boshlangʻich <span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="Kasbiy rivojlanish soati" data-text="Angren_shahar
-4_maktab
-Kasbiy_rivojlanish_soati
+⚡️Angren shahar 4-AFCHOʻM ning Boshlangʻich sinf oʻqituvchilari uchun 25.03.2025 yil kuni " bola="" shaxsiga=""
+                                      yoʻnaltirilgan="" taʼlim"="" mavzusida="" krk="" soati="" oʻtkazildi.="" darsda=""
+                                barcha="" boshlang'ich="" sinf="" o'qituvchilari="" faol="" qatnashishdi.="" yetakchi=""
+                                oʻqituvchi="" sheraliyeva="" dilbaroy="" botirovna."=""
+                                data-img="/media/news/1000080557.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-⚡️Angren shahar 4-AFCHOʻM ning Boshlangʻich sinf oʻqituvchilari uchun 25.03.2025 yil kuni " bola="" shaxsiga="" yoʻnaltirilgan="" taʼlim"="" mavzusida="" krk="" soati="" oʻtkazildi.="" darsda="" barcha="" boshlang'ich="" sinf="" o'qituvchilari="" faol="" qatnashishdi.="" yetakchi="" oʻqituvchi="" sheraliyeva="" dilbaroy="" botirovna."="" data-img="/media/news/1000080557.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="swiper-slide">
-        <div class="card h-100 shadow-sm">
-          <img src="media/news/1000080571.jpg" class="card-img-top" alt="Yangilik surati">
-          <div class="card-body">
-            <h5 class="card-title text-black news-title">NAVROʻZ TADBIRI</h5>
-            <p class="card-text">
-              ANGREN_SHAHAR_MMTB
-4_MAKTAB
-BAYRAM_TADBIRI
+                <div class="swiper-slide">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/news/1000080571.jpg" class="card-img-top" alt="Yangilik surati">
+                        <div class="card-body">
+                            <h5 class="card-title text-black news-title">NAVROʻZ TADBIRI</h5>
+                            <p class="card-text">
+                                ANGREN_SHAHAR_MMTB
+                                4_MAKTAB
+                                BAYRAM_TADBIRI
 
-✨ANGREN SHAHAR 4-SONLI AYRIM FANLAR CHUQUR O'QIT<span class="dots">...</span>
-              <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal" data-title="NAVROʻZ TADBIRI" data-text="ANGREN_SHAHAR_MMTB
+                                ✨ANGREN SHAHAR 4-SONLI AYRIM FANLAR CHUQUR O'QIT<span class="dots">...</span>
+                                <span class="read-more" data-bs-toggle="modal" data-bs-target="newsModal"
+                                      data-title="NAVROʻZ TADBIRI" data-text="ANGREN_SHAHAR_MMTB
 4_MAKTAB
 BAYRAM_TADBIRI
 
 ✨ANGREN SHAHAR 4-SONLI AYRIM FANLAR CHUQUR O'QITILADIGAN SINFLARI MAVJUD UMUMIY O'RTA TA'LIM MAKTABIDA 2025-YIL, 20.03 KUNI NAVRO'Z BAYRAMIGA BAG'ISHLANGAN BAYRAM TADBIRI BO'LIB O'TDI.
 
 🎈TADBIRDA O'QUVCHILAR SHE'R, QO'SHIQ VA RAQSLAR IJRO QILISHDI. 
-SHUNINGDEK, TADBIRDA O'QUVCHILARGA " tosh="" ko'tarish",="" "arqon="" tortish"="" va="" boshqa="" sport="" turlari="" bo'yicha="" ham="" musobaqa="" uyushtirildi.="" ✅ushbu="" navro'z="" bayram="" tadbiri="" ko'tarinki="" ruxda="" o'tkazildi,="" tadbirdan="" so'ng="" o'quvchilarga="" raqs="" tashkil="" qilindi.="" 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸="" ✈️https:="" t.me="" angren4mk"="" data-img="/media/news/1000080571.jpg">Batafsil</span>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+SHUNINGDEK, TADBIRDA O'QUVCHILARGA " tosh="" ko'tarish",="" "arqon="" tortish"="" va="" boshqa="" sport="" turlari=""
+                                bo'yicha="" ham="" musobaqa="" uyushtirildi.="" ✅ushbu="" navro'z="" bayram=""
+                                tadbiri="" ko'tarinki="" ruxda="" o'tkazildi,="" tadbirdan="" so'ng="" o'quvchilarga=""
+                                raqs="" tashkil="" qilindi.="" 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸="" ✈️https:="" t.me="" angren4mk"=""
+                                data-img="/media/news/1000080571.jpg">Batafsil</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="newsModalLabel">Yangilik</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img id="modalImage" class="img-fluid mb-3" alt="Yangilik surati">
-          <p id="modalText"></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="static/main/js/news.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const titles = document.querySelectorAll('.news-title');
-    titles.forEach(function (title) {
-      if (title.textContent.length > 25) {
-        title.textContent = title.textContent.slice(0, 25) + '...';
-      }
-    });
-  });
-</script>
-
-      <style>
-  .form-control,
-  .btn {
-    margin-bottom: 15px;
-  }
-
-  .form {
-    max-width: 300px;
-  }
-
-  iframe {
-    border-radius: 20px;
-  }
-
-  .social {
-    font-size: 30px;
-  }
-
-  .top {
-    margin-bottom: 180px;
-    border: 2px solid black;
-    padding: 40px;
-    border-radius: 15px;
-  }
-
-  @media (max-width: 992px) and (min-width: 768px) {
-    .top {
-      margin-bottom: 100px;
-      padding: 30px;
-    }
-
-    .form {
-      max-width: 400px;
-    }
-
-    iframe {
-      height: 400px;
-    }
-
-    .social {
-      font-size: 25px;
-    }
-
-    .d-flex.gap-4 {
-      gap: 2rem;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .top {
-      margin-bottom: 80px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .form {
-      max-width: 100%;
-    }
-
-    iframe {
-      height: 300px;
-    }
-
-    .social {
-      font-size: 20px;
-    }
-
-    .d-flex.gap-4 {
-      gap: 1rem;
-      justify-content: center;
-    }
-
-    .col-md-4 {
-      margin-bottom: 20px;
-    }
-
-    .col-md-8 iframe {
-      width: 100%;
-    }
-  }
-  .call,
-  .mail,
-  .location {
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-  }
-</style>
-
-<section id="contact" class="pt-5 top container" style="scroll-margin-top: 9rem; margin-top: 190px">
-  <div class="row d-flex align-items-center">
-    <div class="col-md-4 mb-4 justify-content-left">
-      <h2>ALOQA</h2>
-      <form class="container gap-3 py-4 px-3" id="tg">
-        <div class="mb-3 form">
-          <label for="name" class="form-label">Ism</label>
-          <input type="text" id="name" name="name" class="form-control" required="">
+            </div>
         </div>
 
-        <div class="mb-3 form">
-          <label for="number" class="form-label">Telefon raqam</label>
-          <input type="number" id="number" name="number" class="form-control" placeholder="+998901234567" required="">
+        <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newsModalLabel">Yangilik</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" class="img-fluid mb-3" alt="Yangilik surati">
+                        <p id="modalText"></p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <button type="submit" class="btn btn-warning text-white">
-          Jo'natish
-        </button>
-      </form>
-      <p class="contact-item">
-  <!-- Telefon ikonasi -->
-  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-    <path fill="green" d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-  </svg>
-  <a href="tel:+998972111402">+998 97 211 14 02</a>
-</p>
+    <script src="../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="static/main/js/news.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const titles = document.querySelectorAll('.news-title');
+          titles.forEach(function (title) {
+            if (title.textContent.length > 25) {
+              title.textContent = title.textContent.slice(0, 25) + '...';
+            }
+          });
+        });
+    </script>
 
-<p class="contact-item">
-  <!-- Email ikonasi -->
-  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-    <path fill="orange" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-  </svg>
-  <a href="mailto:pitnak8maktab@gmail.com">pitnak8maktab@gmail.com</a>
-</p>
+    <style>
+        .form-control,
+        .btn {
+          margin-bottom: 15px;
+        }
 
-<p class="contact-item">
-  <!-- Manzil ikonasi -->
-  <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-    <path fill="red" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-  </svg>
-  <a href="https://maps.app.goo.gl/rmxpqma1Umpi5b4v6" target="_blank">Pitnak Shahar</a>
-</p>
-      <div class="d-flex gap-4">
-        <a href="https://t.me/angren4mk" target="_blank" class="bi bi-telegram text-blue social"></a>
-        <a href="https://youtu.be/dUzLAnoUHeE?si=jZhp4DDwOprJLaym" target="_blank" class="bi bi-youtube text-danger social">
-        </a>
-      </div>
-    </div>
+        .form {
+          max-width: 300px;
+        }
 
-    <div class="col-md-8">
-      <iframe src="https://maps.app.goo.gl/nePFMBsQyr1fmPKN9" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </div>
-</section>
+        iframe {
+          border-radius: 20px;
+        }
 
+        .social {
+          font-size: 30px;
+        }
 
+        .top {
+          margin-bottom: 180px;
+          border: 2px solid black;
+          padding: 40px;
+          border-radius: 15px;
+        }
+
+        @media (max-width: 992px) and (min-width: 768px) {
+          .top {
+            margin-bottom: 100px;
+            padding: 30px;
+          }
+
+          .form {
+            max-width: 400px;
+          }
+
+          iframe {
+            height: 400px;
+          }
+
+          .social {
+            font-size: 25px;
+          }
+
+          .d-flex.gap-4 {
+            gap: 2rem;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .top {
+            margin-bottom: 80px;
+            padding: 20px;
+            text-align: center;
+          }
+
+          .form {
+            max-width: 100%;
+          }
+
+          iframe {
+            height: 300px;
+          }
+
+          .social {
+            font-size: 20px;
+          }
+
+          .d-flex.gap-4 {
+            gap: 1rem;
+            justify-content: center;
+          }
+
+          .col-md-4 {
+            margin-bottom: 20px;
+          }
+
+          .col-md-8 iframe {
+            width: 100%;
+          }
+        }
+        .call,
+        .mail,
+        .location {
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+        }
+    </style>
+
+    <section id="contact" class="pt-5 top container" style="scroll-margin-top: 9rem; margin-top: 190px">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-4 mb-4 justify-content-left">
+                <h2>ALOQA</h2>
+                <form class="container gap-3 py-4 px-3" id="tg">
+                    <div class="mb-3 form">
+                        <label for="name" class="form-label">Ism</label>
+                        <input type="text" id="name" name="name" class="form-control" required="">
+                    </div>
+
+                    <div class="mb-3 form">
+                        <label for="number" class="form-label">Telefon raqam</label>
+                        <input type="number" id="number" name="number" class="form-control" placeholder="+998901234567"
+                               required="">
+                    </div>
+
+                    <button type="submit" class="btn btn-warning text-white">
+                        Jo'natish
+                    </button>
+                </form>
+                <p class="contact-item">
+                    <!-- Telefon ikonasi -->
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                         height="30">
+                        <path fill="green"
+                              d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    <a href="tel:+998972111402">+998 97 211 14 02</a>
+                </p>
+
+                <p class="contact-item">
+                    <!-- Email ikonasi -->
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                         height="30">
+                        <path fill="orange"
+                              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <a href="mailto:pitnak8maktab@gmail.com">pitnak8maktab@gmail.com</a>
+                </p>
+
+                <p class="contact-item">
+                    <!-- Manzil ikonasi -->
+                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                         height="30">
+                        <path fill="red"
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <a href="https://maps.app.goo.gl/rmxpqma1Umpi5b4v6" target="_blank">Pitnak Shahar</a>
+                </p>
+                <div class="d-flex gap-4">
+                    <a href="https://t.me/angren4mk" target="_blank" class="bi bi-telegram text-blue social"></a>
+                    <a href="https://youtu.be/dUzLAnoUHeE?si=jZhp4DDwOprJLaym" target="_blank"
+                       class="bi bi-youtube text-danger social">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <iframe src="https://maps.app.goo.gl/nePFMBsQyr1fmPKN9" width="600" height="450" style="border:0;"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
 
 </main>
-    
-    
+
 
 <style>
-  footer {
-    background-color: 212529;
-    color: fff;
-  }
-
-  footer a {
-    color: 2760fd;
-    text-decoration: none;
-  }
-
-  footer .nav-text {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  footer img {
-    border-radius: 50%;
-  }
-
-  footer .container {
-    max-width: 1200px;
-  }
-
-  @media (max-width: 992px) and (min-width: 768px) {
-    footer .d-flex {
-      flex-direction: column;
-      text-align: center;
+    footer {
+      background-color: 212529;
+      color: fff;
     }
 
-    footer .nav {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    footer .nav li {
-      flex: 1 1 calc(50% - 1rem);
-      text-align: center;
-    }
-
-    footer p {
-      margin-top: 1rem;
-      font-size: 14px;
-    }
-
-    footer img {
-      width: 60px;
-      height: 60px;
-    }
-  }
-  @media (max-width: 576px) {
-    footer .d-flex {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    footer .nav {
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    footer .nav li {
-      width: 100%;
-      text-align: center;
-    }
-
-    footer img {
-      width: 50px;
-      height: 50px;
-    }
-
-    footer p {
-      font-size: 12px;
-      margin-top: 1rem;
+    footer a {
+      color: 2760fd;
+      text-decoration: none;
     }
 
     footer .nav-text {
-      font-size: 12px;
+      font-size: 14px;
+      font-weight: 500;
     }
-  }
+
+    footer img {
+      border-radius: 50%;
+    }
+
+    footer .container {
+      max-width: 1200px;
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+      footer .d-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      footer .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      footer .nav li {
+        flex: 1 1 calc(50% - 1rem);
+        text-align: center;
+      }
+
+      footer p {
+        margin-top: 1rem;
+        font-size: 14px;
+      }
+
+      footer img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    @media (max-width: 576px) {
+      footer .d-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      footer .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      footer .nav li {
+        width: 100%;
+        text-align: center;
+      }
+
+      footer img {
+        width: 50px;
+        height: 50px;
+      }
+
+      footer p {
+        font-size: 12px;
+        margin-top: 1rem;
+      }
+
+      footer .nav-text {
+        font-size: 12px;
+      }
+    }
 </style>
 
 <footer class="bg-dark text-white">
-  <div class="container">
-    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <a href="/" class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <img src="static/main/img/logo.png" alt="" width="70" height="70">
-      </a>
-      <p class="col-md-4 mb-0 text-white">
-        © 2023 Created by
-        <a target="_blank" href="https://t.me/leetcoder1337" class="text-decoration-none">Leet Coding Group</a>
-      </p>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <a href="/"
+               class="d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <img src="static/main/img/logo.png" alt="" width="70" height="70">
+            </a>
+            <p class="col-md-4 mb-0 text-white">
+                © 2023 Created by
+                <a target="_blank" href="https://t.me/leetcoder1337" class="text-decoration-none">Leet Coding Group</a>
+            </p>
 
-      <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item">
-          <a href="about" class="nav-link px-2 text-white nav-text">Biz haqimizda</a>
-        </li>
-        <li class="nav-item">
-          <a href="gallery" class="nav-link px-2 text-white nav-text">Galereya</a>
-        </li>
-        <li class="nav-item">
-          <a href="teacher" class="nav-link px-2 text-white nav-text">Ustozlar</a>
-        </li>
-        <li class="nav-item">
-          <a href="news" class="nav-link px-2 text-white nav-text">Yangiliklar</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact" class="nav-link px-2 text-white nav-text">Aloqa</a>
-        </li>
-      </ul>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item">
+                    <a href="about" class="nav-link px-2 text-white nav-text">Biz haqimizda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery" class="nav-link px-2 text-white nav-text">Galereya</a>
+                </li>
+                <li class="nav-item">
+                    <a href="teacher" class="nav-link px-2 text-white nav-text">Ustozlar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news" class="nav-link px-2 text-white nav-text">Yangiliklar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact" class="nav-link px-2 text-white nav-text">Aloqa</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </footer>
 
-    
-    <script src="static/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="static/main/js/main.js"></script>
-      
-    <script src="../cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  
 
-</body></html>
+<script src="static/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="static/main/js/main.js"></script>
+
+<script src="../cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</body>
+</html>
