@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <h1 class="mb-4">{{ news.title }}</h1>
+            <div class="mb-4">
+                <img src="{{ news.image.url }}" alt="{{ news.title }}" class="img-fluid rounded">
+                <p class="text-muted mt-2">{{ news.date_posted|date:"d.m.Y H:i" }}</p>
+            </div>
+            <div class="news-content">
+                {{ news.content|linebreaks }}
+            </div>
+            <a href="{% url 'news' %}" class="btn btn-primary mt-4">Orqaga</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

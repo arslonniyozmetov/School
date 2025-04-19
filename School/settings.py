@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ADMIN_SITE_HEADER = "Pitnak 8-son Maktab Admin Paneli"
+
 
 # Application definition
 
