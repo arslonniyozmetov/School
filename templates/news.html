@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uz">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Pitnak 8-son Maktab - Yangiliklar</title>
+
+    <!-- CSS Fayllar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/font/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/news.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top navbar-shadow">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img alt="logo" class="d-inline-block align-middle" height="70" src="{% static 'main/img/logo.png' %}" width="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'home' %}">Bosh Sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'about' %}">Maktab Haqida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'news' %}">Yangiliklar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'contact' %}">Aloqa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Asosiy Kontent -->
+    <main class="main-content" style="padding-top: 80px;">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 section-title">Maktab Yangiliklari</h2>
+
+            <!-- Yangiliklar Kartalari -->
+            <div class="row g-4">
+                <!-- Yangilik 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news1.jpg' %}" class="card-img-top" alt="Sport musobaqasi">
+                            <span class="news-date">20.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sport Musobaqasi G'alabasi</h5>
+                            <p class="card-text">Tuman chempionatida maktabimiz futbol jamoasi g'olib chiqdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news1.jpg' %}" class="card-img-top" alt="Sport musobaqasi">
+                            <span class="news-date">20.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sport Musobaqasi G'alabasi</h5>
+                            <p class="card-text">Tuman chempionatida maktabimiz futbol jamoasi g'olib chiqdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news1.jpg' %}" class="card-img-top" alt="Sport musobaqasi">
+                            <span class="news-date">20.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sport Musobaqasi G'alabasi</h5>
+                            <p class="card-text">Tuman chempionatida maktabimiz futbol jamoasi g'olib chiqdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yangilik 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news2.jpg' %}" class="card-img-top" alt="Olimpiada g'olibi">
+                            <span class="news-date">15.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Respublika Olimpiadasi</h5>
+                            <p class="card-text">10-sinf o'quvchisi matematika olimpiadasida 1-o'rinni qo'lga kiritdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news2.jpg' %}" class="card-img-top" alt="Olimpiada g'olibi">
+                            <span class="news-date">15.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Respublika Olimpiadasi</h5>
+                            <p class="card-text">10-sinf o'quvchisi matematika olimpiadasida 1-o'rinni qo'lga kiritdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news2.jpg' %}" class="card-img-top" alt="Olimpiada g'olibi">
+                            <span class="news-date">15.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Respublika Olimpiadasi</h5>
+                            <p class="card-text">10-sinf o'quvchisi matematika olimpiadasida 1-o'rinni qo'lga kiritdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news2.jpg' %}" class="card-img-top" alt="Olimpiada g'olibi">
+                            <span class="news-date">15.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Respublika Olimpiadasi</h5>
+                            <p class="card-text">10-sinf o'quvchisi matematika olimpiadasida 1-o'rinni qo'lga kiritdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news2.jpg' %}" class="card-img-top" alt="Olimpiada g'olibi">
+                            <span class="news-date">15.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Respublika Olimpiadasi</h5>
+                            <p class="card-text">10-sinf o'quvchisi matematika olimpiadasida 1-o'rinni qo'lga kiritdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 news-card shadow-sm">
+                        <div class="news-img-container">
+                            <img src="{% static 'main/img/news2.jpg' %}" class="card-img-top" alt="Olimpiada g'olibi">
+                            <span class="news-date">15.10.2023</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Respublika Olimpiadasi</h5>
+                            <p class="card-text">10-sinf o'quvchisi matematika olimpiadasida 1-o'rinni qo'lga kiritdi...</p>
+                            <a href="#" class="btn btn-primary">Batafsil o'qish</a>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Sahifalash -->
+            <nav class="mt-5" aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Oldingi</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Keyingi</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer (index.html dagi bilan bir xil) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
+                        <img src="{% static 'main/img/logo.png' %}" alt="Logo" height="60" class="me-3">
+                        <span class="text-white fs-5 fw-bold">8-son Maktab</span>
+                    </a>
+                    <p class="mt-3 mb-0">Xorazm viloyati, Pitnak shahri</p>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Tezkor Havolalar</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="{% url 'about' %}" class="text-white text-decoration-none">Maktab Haqida</a></li>
+                        <li class="mb-2"><a href="{% url 'news' %}" class="text-white text-decoration-none">Yangiliklar</a></li>
+                        <li class="mb-2"><a href="{% url 'teacher' %}" class="text-white text-decoration-none">Ustozlar</a></li>
+                        <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Aloqa</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Ijtimoiy Tarmoqlar</h5>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <p class="mb-1"><i class="bi bi-telephone me-2"></i> +998 97 211 14 02</p>
+                        <p class="mb-0"><i class="bi bi-envelope me-2"></i> info@maktab8.edu.uz</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3">
+
+            <div class="text-center">
+                <p class="mb-0">
+                    &copy; 2023 Pitnak 8-son Umumta'lim Maktabi. Barcha huquqlar himoyalangan.
+                    <span class="d-block d-md-inline mt-2 mt-md-0">Ishlab chiquvchi: <a href="https://t.me/leetcoder1337" class="text-warning text-decoration-none">Leet Coding Group</a></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Fayllari -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
