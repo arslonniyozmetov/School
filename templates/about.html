@@ -1,10 +1,148 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>Maktab Haqida</title>
+    <link href="static/main/img/logo.png" rel="icon" type="image/x-icon">
+
+    <!-- CSS Fayllar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/font/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'main/css/news.css' %}" rel="stylesheet">
+
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top navbar-shadow">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img alt="logo" class="d-inline-block align-middle" height="70" src="{% static 'main/img/logo.png' %}"
+                 width="70">
+        </a>
+        <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'home' %}">Bosh Sahifa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'about' %}">Maktab
+                        Haqida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'news' %}">Yangiliklar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'contact' %}">Aloqa</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="main-content" style="padding-top: 80px;">
+    <div class="container py-5">
+        <h2 class="text-center mb-5= section-title fw-bold">Maktab Haqida</h2>
+    </div>
+    <section class="container section py-5" id="about" style="scroll-margin-top: 5rem">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="card border-0 shadow-sm p-4 text-white bg-dark">
+                    <h2 class="text-center mb-4" style="letter-spacing: 2px">
+                        Biz haqimizda
+                    </h2>
+                    <p class="lead text-center">
+                        Xorazm viloyati Pitnak Shahar 8-umumta'lim maktabi.
+                    </p>
+                    <p class="about-text">Maktab bu bilim va tarbiya maskani bo‘lib, o‘quvchilarimizning intellektual,
+                        ma’naviy va jismoniy rivojlanishiga katta e’tibor qaratamiz. Bizning maqsadimiz – zamonaviy
+                        bilim va ko‘nikmalarni o‘rgatish bilan birga, o‘quvchilarni jamiyatga foydali, vatanparvar va
+                        mas’uliyatli shaxs sifatida shakllantirishdir.
+                        Maktabimizda malakali o‘qituvchilar jamoasi faoliyat olib boradi. Ular har bir o‘quvchining
+                        qobiliyatini rivojlantirishga yordam beradi. Shu bilan birga, zamonaviy o‘quv usullari va
+                        texnologiyalaridan foydalanib, ta’lim jarayonini yanada samarali qilamiz. Maktabimizda
+                        o‘quvchilar uchun turli to‘garaklar va tadbirlar tashkil etilib, ularning qobiliyatlari va
+                        qiziqishlarini rivojlantirishga katta ahamiyat qaratiladi. Shuningdek, biz ota-onalar bilan
+                        yaqin hamkorlikda ishlaymiz va ularning fikr-mulohazalarini inobatga olamiz.Har bir o‘quvchining
+                        muvaffaqiyati – bu bizning asosiy maqsadimiz. Shu sababli, maktabimizda qulay va do‘stona muhit
+                        yaratilgan. Biz o‘quvchilarimizning bilim olishga bo‘lgan ishtiyoqini oshirish va ularni
+                        kelajakda muvaffaqiyatli shaxs sifatida ko‘rishdan mamnunmiz. Maktab nafaqat ta’lim maskani,
+                        balki har bir o‘quvchi uchun orzularini amalga oshirish yo‘lida mustahkam poydevor yaratadigan
+                        joydir.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="col-md-8">
+                    <iframe
+                            allowfullscreen=""
+                            height="450"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://maps.app.goo.gl/nePFMBsQyr1fmPKN9"
+                            style="border:0;"
+                            width="100%">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <a class="d-flex align-items-center text-decoration-none" href="{% url 'home' %}">
+                    <img alt="Logo" class="me-3" height="60" src="{% static 'main/img/logo.png' %}">
+                    <span class="text-white fs-5 fw-bold">8-son Maktab</span>
+                </a>
+                <p class="mt-3 mb-0">Xorazm viloyati, Pitnak shahar</p>
+            </div>
+
+            <div class="col-md-4 mb-4 mb-md-0">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="text-white text-decoration-none" href="{% url 'about' %}">Maktab
+                        Haqida</a></li>
+                    <li class="mb-2"><a class="text-white text-decoration-none" href="{% url 'news' %}">Yangiliklar</a>
+                    </li>
+                    <li class="mb-2"><a class="text-white text-decoration-none" href="{% url 'teacher' %}">Ustozlar</a>
+                    </li>
+                    <li><a class="text-white text-decoration-none" href="{% url 'contact' %}">Aloqa</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Ijtimoiy Tarmoqlar</h5>
+                <div class="social-icons mt-3">
+                    <a class="text-white me-3" href="#"><i class="bi bi-telegram fs-4"></i></a>
+                    <a class="text-white me-3" href="#"><i class="bi bi-facebook fs-4"></i></a>
+                    <a class="text-white" href="#"><i class="bi bi-youtube fs-4"></i></a>
+                </div>
+                <div class="mt-3">
+                    <p class="mb-1"><i class="bi bi-telephone me-2"></i> +998 99 311 78 80</p>
+                    <p class="mb-0"><i class="bi bi-envelope me-2"></i> pitnak8maktab@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-4 mb-3">
+
+        <div class="text-center">
+            <p class="mb-0">
+                &copy; 2025 Pitnak 8-son Umumta'lim Maktabi rasmiy sayti. Barcha huquqlar himoyalangan.
+                <span class="d-block d-md-inline mt-2 mt-md-0"> Created by: <a class="text-warning text-decoration-none"
+                                                                               href="https://t.me/leetcoder1337">Leet Coding Group</a></span>
+            </p>
+        </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
