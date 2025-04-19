@@ -1,0 +1,21 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-icon {
+  flex-shrink: 0; /* Ikonlarning o'lchami o'zgartirilmasligi uchun */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

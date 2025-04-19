@@ -1,0 +1,129 @@
+.swiper-container {
+
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+  
+   
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+
+
+  @media (max-width: 1024px) {
+    .swiper-slide img {
+      width: 350px;
+      height: 50%;
+    }
+    .swiper-slide-active img{
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .swiper-slide img {
+      width: 300px;
+      height: 50%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .swiper-slide img {
+      width: 230px;
+      height: 40%;
+    }
+  }
+
+  .swiper-slide-next img,
+  .swiper-slide-prev img {
+    
+    z-index: 1;
+    transform: scale(0.7);
+  }
+
+  .swiper-slide-active img {
+
+    z-index: 10;
+    transform: scale(0.9);
+  }
+
+  .swiper-pagination-bullet {
+    background: black;
+  }
+
+  .maktab-rasmlari {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 24px;
+  }
+
+
+  /* Gallery Swiper Styles */
+#gallery .swiper-container {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 70px;
+  }
+  
+  #gallery .swiper-wrapper {
+    display: flex;
+  }
+  
+  #gallery .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  #gallery .swiper-slide img {
+    width: 430px;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, ;
+    margin-bottom: 70px;
+  }
+
+  #gallery h2{
+    
+    font-size: 30px;
+  } 
+  #gallery{
+    padding-top: 100px;
+    margin-bottom: 120px;
+  } 
+  #gallery .swiper-slide-next img,
+  #gallery .swiper-slide-prev img {
+
+    transform: scale(0.8);
+  }
+  
+  #gallery .swiper-slide-active img {
+
+    transform: scale(1);
+  }
+  
+  #gallery .swiper-pagination-bullet {
+    background: black;
+  }
+  
