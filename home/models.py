@@ -22,3 +22,13 @@ class News(models.Model):
         verbose_name = "Yangilik"
         verbose_name_plural = "Yangiliklar"
         ordering = ['-date_posted']
+        
+class ContactMessage(models.Model):
+    name = models.CharField(max_length=100)
+    contact_info = models.CharField("Telefon raqam yoki Email", max_length=100)
+    message = models.TextField("Xabar", blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} - {self.contact_info}"
+
