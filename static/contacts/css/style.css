@@ -1,0 +1,14 @@
+.unread {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}

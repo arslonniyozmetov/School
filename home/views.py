@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
-from .models import News,ContactMessage
+from.models import News
 
 # Create your views here.
 def home_view(request):
@@ -27,13 +27,3 @@ def news_list(request):
 def news_detail(request, slug):
     news_item = get_object_or_404(News, slug=slug)
     return render(request, 'news_detail.html', {'news': news_item})
-
-def contact_view(request):
-    if request.method == 'POST':
-        name = request.POST.get('name')
-        contact_info = request.POST.get('contact_info')
-        message = request.POST.get('message')
-        if name and contact_info:
-            ContactMessage.objects.create(name=name, contact_info=contact_info, message=message)
-            return render(request, 'contact.html', {'success': True})
-    return render(request, 'contact.html')

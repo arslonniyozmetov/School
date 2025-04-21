@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
-from .models import News, ContactMessage
+from .models import News
 
 
 @admin.register(News)
@@ -17,5 +17,3 @@ class NewsAdmin(admin.ModelAdmin):
         return "-"
 
     image_preview.short_description = 'Rasm'
-
-admin.site.register(ContactMessage)
