@@ -1,65 +1,279 @@
-<!DOCTYPE html>
-{%  load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-    <title>Ustozlar</title>
-    <link href="static/main/img/logo.png" rel="icon" type="image/x-icon">
+{% extends 'base.html' %}
+{% load static %}
 
-    <!-- CSS Fayllar -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'vendor/bootstrap-icons/font/bootstrap-icons.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/news.css' %}" rel="stylesheet">
+{% block title %}Ustozlar{% endblock %}
 
-</head>
-0
-<body>
-<!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
-                        <img src="{% static 'main/img/logo.png' %}" alt="Logo" height="60" class="me-3">
-                        <span class="text-white fs-5 fw-bold">8-son Maktab</span>
-                    </a>
-                    <p class="mt-3 mb-0">Xorazm viloyati, Pitnak shahar</p>
+{% block extra_css %}
+<link href="{% static 'main/css/teachers.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+<main style="padding-top: 80px;">
+    <h2 class="text-center mb-5 section-title fw-bold">Ustozlar</h2>
+</main>
+<div class="container" id="teacher" style="scroll-margin-top: 10rem">
+
+
+                <div class="swiper-slide">
+                    <img alt="Zebo Abdujabborova" class="shadow" src="media/teacher_img/IMG_20250121_202909_290.jpg">
+                    <h5 class="text-white">
+                        Zebo Abdujabborova
+                    </h5>
+                    <p class="text-white">Direktor o'rinbosari</p>
                 </div>
 
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="{% url 'about' %}" class="text-white text-decoration-none">Maktab Haqida</a></li>
-                        <li class="mb-2"><a href="{% url 'news' %}" class="text-white text-decoration-none">Yangiliklar</a></li>
-                        <li class="mb-2"><a href="{% url 'teacher' %}" class="text-white text-decoration-none">Ustozlar</a></li>
-                        <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Aloqa</a></li>
-                    </ul>
+                <div class="swiper-slide">
+                    <img alt="Jamshid Xudoyberdiyev" class="shadow"
+                         src="media/teacher_img/%D0%96%D0%B0%D0%BC%D1%88%D0%B8%D0%B4.jpg">
+                    <h5 class="text-white">
+                        Jamshid Xudoyberdiyev
+                    </h5>
+                    <p class="text-white">Matematika</p>
                 </div>
 
-                <div class="col-md-4">
-                    <h5>Ijtimoiy Tarmoqlar</h5>
-                    <div class="social-icons mt-3">
-                        <a href="#" class="text-white me-3"><i class="bi bi-telegram fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
-                    </div>
-                    <div class="mt-3">
-                        <p class="mb-1"><i class="bi bi-telephone me-2"></i> +998 99 311 78 80</p>
-                        <p class="mb-0"><i class="bi bi-envelope me-2"></i> pitnak8maktab@gmail.com</p>
-                    </div>
+                <div class="swiper-slide">
+                    <img alt="Baxtiyor Abduvaliyev" class="shadow" src="media/teacher_img/BAXTIYOR_AKA.jpg">
+                    <h5 class="text-white">
+                        Baxtiyor Abduvaliyev
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
                 </div>
-            </div>
 
-            <hr class="mt-4 mb-3">
+                <div class="swiper-slide">
+                    <img alt="Mahfuza Nodirova" class="shadow" src="media/teacher_img/maxfuza.jpg">
+                    <h5 class="text-white">
+                        Mahfuza Nodirova
+                    </h5>
+                    <p class="text-white">Ona-tili va Adabiyot</p>
+                </div>
 
-            <div class="text-center">
-                <p class="mb-0">
-                    &copy; 2025 Pitnak 8-son Umumta'lim Maktabi rasmiy sayti. Barcha huquqlar himoyalangan.
-                    <span class="d-block d-md-inline mt-2 mt-md-0"> Created by: <a href="https://t.me/leetcoder1337" class="text-warning text-decoration-none">Leet Coding Group</a></span>
-                </p>
+                <div class="swiper-slide">
+                    <img alt="Dilnoza Ermatova" class="shadow" src="media/teacher_img/Ozim.jpg">
+                    <h5 class="text-white">
+                        Dilnoza Ermatova
+                    </h5>
+                    <p class="text-white">Informatika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Manzura Umrzakova" class="shadow" src="media/teacher_img/manzura.jpg">
+                    <h5 class="text-white">
+                        Manzura Umrzakova
+                    </h5>
+                    <p class="text-white">Ona tili va adabiyot</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Maxbuba Urinbayeva" class="shadow" src="media/teacher_img/IMG_20250121_160130_615.jpg">
+                    <h5 class="text-white">
+                        Maxbuba Urinbayeva
+                    </h5>
+                    <p class="text-white">Ilmiy mudir</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Ravshan Xasanov" class="shadow" src="media/teacher_img/Ravshan.jpg">
+                    <h5 class="text-white">
+                        Ravshan Xasanov
+                    </h5>
+                    <p class="text-white">Direktor</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Munisa Akbaraliyeva" class="shadow" src="media/teacher_img/MUNISA.jpg">
+                    <h5 class="text-white">
+                        Munisa Akbaraliyeva
+                    </h5>
+                    <p class="text-white">Matematika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Sanjar Namozov" class="shadow" src="media/teacher_img/SANJAR.jpg">
+                    <h5 class="text-white">
+                        Sanjar Namozov
+                    </h5>
+                    <p class="text-white">Ilmiy mudir</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Elova Nargiza" class="shadow" src="media/teacher_img/NARGIZA.jpg">
+                    <h5 class="text-white">
+                        Elova Nargiza
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Ra'no Razzakova" class="shadow" src="media/teacher_img/IMG_20250121_171618_990.jpg">
+                    <h5 class="text-white">
+                        Ra'no Razzakova
+                    </h5>
+                    <p class="text-white">Ona tili va adabiyot</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Sardor Yangiyev" class="shadow" src="media/teacher_img/SARDOR.jpg">
+                    <h5 class="text-white">
+                        Sardor Yangiyev
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Kamola Ubaydullayeva" class="shadow" src="media/teacher_img/IMG_20250121_190613_853.jpg">
+                    <h5 class="text-white">
+                        Kamola Ubaydullayeva
+                    </h5>
+                    <p class="text-white">Geografiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Mahliyoxon Shamsutdinova" class="shadow"
+                         src="media/teacher_img/IMG_20250122_070728_483.jpg">
+                    <h5 class="text-white">
+                        Mahliyoxon Shamsutdinova
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Dilbaroy Sheraliyeva" class="shadow" src="media/teacher_img/DILBAROY.jpg">
+                    <h5 class="text-white">
+                        Dilbaroy Sheraliyeva
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Dilfuza Abdullayeva" class="shadow" src="media/teacher_img/dilfuz.jpg">
+                    <h5 class="text-white">
+                        Dilfuza Abdullayeva
+                    </h5>
+                    <p class="text-white">Tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="San'atxon Raximova" class="shadow" src="media/teacher_img/SANATXON_OPA.jpg">
+                    <h5 class="text-white">
+                        San'atxon Raximova
+                    </h5>
+                    <p class="text-white">Ingliz tili</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Yuldosh Jo'raqulov" class="shadow" src="media/teacher_img/YULDOSH.jpg">
+                    <h5 class="text-white">
+                        Yuldosh Jo'raqulov
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Muxabbat Sabdinova" class="shadow" src="media/teacher_img/MUHABBAT.jpg">
+                    <h5 class="text-white">
+                        Muxabbat Sabdinova
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Xilola Mirzayeva" class="shadow" src="media/teacher_img/XILOLA.jpg">
+                    <h5 class="text-white">
+                        Xilola Mirzayeva
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Dilorom Mirzaxmedova" class="shadow" src="media/teacher_img/IMG_20250121_171608_433.jpg">
+                    <h5 class="text-white">
+                        Dilorom Mirzaxmedova
+                    </h5>
+                    <p class="text-white">Oliy toifali Biologiya o'qit.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Feruza Mirzamamatova" class="shadow" src="media/teacher_img/IMG_20250121_171629_833.jpg">
+                    <h5 class="text-white">
+                        Feruza Mirzamamatova
+                    </h5>
+                    <p class="text-white">Jismoniy tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Dildora Eshmirzayeva" class="shadow" src="media/teacher_img/IMG_20250121_180641_626.jpg">
+                    <h5 class="text-white">
+                        Dildora Eshmirzayeva
+                    </h5>
+                    <p class="text-white">Informatika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Sitora Abdivaliyeva" class="shadow" src="media/teacher_img/IMG_20250121_180353_588.jpg">
+                    <h5 class="text-white">
+                        Sitora Abdivaliyeva
+                    </h5>
+                    <p class="text-white">Chizmachilik</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Munojat Usmanova" class="shadow" src="media/teacher_img/IMG_20250121_201458_820.jpg">
+                    <h5 class="text-white">
+                        Munojat Usmanova
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Xumora Suleymanova" class="shadow" src="media/teacher_img/IMG_20250121_201525_058.jpg">
+                    <h5 class="text-white">
+                        Xumora Suleymanova
+                    </h5>
+                    <p class="text-white">Tarbiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Gulnora Qarshiboyeva" class="shadow" src="media/teacher_img/gulnora.jpg">
+                    <h5 class="text-white">
+                        Gulnora Qarshiboyeva
+                    </h5>
+                    <p class="text-white">Biologiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Sayniso Babaraximova" class="shadow" src="media/teacher_img/IMG_20250122_185442_984.jpg">
+                    <h5 class="text-white">
+                        Sayniso Babaraximova
+                    </h5>
+                    <p class="text-white">Rus tili</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Gulchexra Raxmanova" class="shadow" src="media/teacher_img/gulchehra.jpg">
+                    <h5 class="text-white">
+                        Gulchexra Raxmanova
+                    </h5>
+                    <p class="text-white">Fizika</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Dilro'za Nigmatova" class="shadow" src="media/teacher_img/dilruz.jpg">
+                    <h5 class="text-white">
+                        Dilro'za Nigmatova
+                    </h5>
+                    <p class="text-white">Texnologiya</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img alt="Ro'za Reymberdiyeva" class="shadow" src="media/teacher_img/Roza_BRGS7FR.jpg">
+                    <h5 class="text-white">
+                        Ro'za Reymberdiyeva
+                    </h5>
+                    <p class="text-white">Boshlang'ich</p>
+                </div>
+
             </div>
         </div>
-    </footer>
-</body>
-</html>
+    </div>
+{% endblock %}

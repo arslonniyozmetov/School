@@ -7,7 +7,6 @@ urlpatterns = (
     path('', home_view, name='home'),
     path('about/', about_view, name='about'),
     path('contact/', contact_view, name='contact'),
-    path('gallery/', gallery_view, name='gallery'),
     path('teacher/',teacher_view, name='teacher'),
 path('news/', news_list, name='news'),
     path('news/<slug:slug>/', news_detail, name='news_detail'),

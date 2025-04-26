@@ -1,0 +1,41 @@
+{% load static %}
+<link href="{% static 'vendor/bootstrap-icons/font/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/style.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/news.css' %}" rel="stylesheet">
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img alt="logo" class="d-inline-block align-middle" height="70" src="{% static 'main/img/logo.png' %}"
+                 width="70">
+        </a>
+        <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    {% if request.path != "/" %}
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'home' %}">Bosh Sahifa</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'about' %}">Maktab
+                        Haqida</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'teacher' %}">
+                        Ustozlar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'news' %}">Yangiliklar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white nav-text text-decoration-none" href="{% url 'contact' %}">Aloqa</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

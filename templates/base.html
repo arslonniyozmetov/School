@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Pitnak 8-son maktab{% endblock %}</title>
+    <link href="{% static 'main/img/logo.png' %}" rel="icon" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (Navbar) -->
+    {% include 'includes/header.html' %}
+
+    <!-- Asosiy Kontent (Har bir sahifa uchun o'zgaradi) -->
+    <main class="container my-5">
+        {% block content %}
+        <!-- Child template lar bu joyni to'ldiradi -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
