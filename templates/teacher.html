@@ -3,51 +3,22 @@
 
 {% block title %}Ustozlar{% endblock %}
 
-{% block extra_css %}
-<link href="{% static 'main/css/teachers.css' %}" rel="stylesheet">
-
-{% endblock %}
-
 {% block content %}
 <main style="padding-top: 80px;">
-    <h2 class="text-center mb-5 section-title fw-bold">Ustozlar</h2>
+    <h2 class="text-center mb-5 section-title fw-bold">Maktab Ustozlari</h2>
 </main>
-<div class="container" id="teacher" style="scroll-margin-top: 10rem">
 
-
-                <div class="swiper-slide">
-                    <img alt="Zebo Abdujabborova" class="shadow" src="media/teacher_img/IMG_20250121_202909_290.jpg">
-                    <h5 class="text-white">
-                        Zebo Abdujabborova
-                    </h5>
-                    <p class="text-white">Direktor o'rinbosari</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img alt="Jamshid Xudoyberdiyev" class="shadow"
-                         src="media/teacher_img/%D0%96%D0%B0%D0%BC%D1%88%D0%B8%D0%B4.jpg">
-                    <h5 class="text-white">
-                        Jamshid Xudoyberdiyev
-                    </h5>
-                    <p class="text-white">Matematika</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img alt="Baxtiyor Abduvaliyev" class="shadow" src="media/teacher_img/BAXTIYOR_AKA.jpg">
-                    <h5 class="text-white">
-                        Baxtiyor Abduvaliyev
-                    </h5>
-                    <p class="text-white">Jismoniy tarbiya</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img alt="Mahfuza Nodirova" class="shadow" src="media/teacher_img/maxfuza.jpg">
-                    <h5 class="text-white">
-                        Mahfuza Nodirova
-                    </h5>
-                    <p class="text-white">Ona-tili va Adabiyot</p>
-                </div>
+<div class="row g-4">
+    {% for teacher in teachers %}
+    <div class="col-md-6 col-lg-4">
+        <div class="card h-100 teacher-card shadow-sm">
+            <img src="{{ teacher.photo.url }}" class="card-img-top" alt="{{ teacher.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ teacher.name }}</h5>
+                <p class="card-text">{{ teacher.subject }}</p>
             </div>
         </div>
     </div>
+    {% endfor %}
+</div>
 {% endblock %}

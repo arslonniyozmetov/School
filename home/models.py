@@ -22,3 +22,15 @@ class News(models.Model):
         verbose_name = "Yangilik"
         verbose_name_plural = "Yangiliklar"
         ordering = ['-date_posted']
+
+class Teacher(models.Model):
+    name = models.CharField(max_length=100, verbose_name="Ism")
+    subject = models.CharField(max_length=100, verbose_name="Fan")
+    photo = models.ImageField(upload_to='teacher_photos/', verbose_name="Rasm")
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Ustoz"
+        verbose_name_plural = "Ustozlar"

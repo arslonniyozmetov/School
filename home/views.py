@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
-from.models import News
+from.models import *
+from django.shortcuts import render, get_object_or_404
+from .models import Teacher
 
 # Create your views here.
 def home_view(request):
@@ -9,8 +10,12 @@ def about_view(request):
     return render(request, 'about.html')
 def contact_view(request):
     return render(request, 'contact.html')
+
+
 def teacher_view(request):
-    return render(request, 'teacher.html')
+    teachers = Teacher.objects.all()
+    return render(request, 'teacher.html', {'teachers': teachers})
+
 
 
 
