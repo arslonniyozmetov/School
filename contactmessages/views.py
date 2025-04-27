@@ -1,26 +1,40 @@
-from django.shortcuts import render, redirect
-from .forms import ContactForm
+import requests
+from django.shortcuts import render
+
 from .models import ContactMessage
-from django.contrib.auth.decorators import login_required
+
+# Telegram Bot Token va Chat ID
+TELEGRAM_BOT_TOKEN = '7202357879:AAHtxkIueQ-qNT4TNaeF19PNuDwD7FA11RM'
+TELEGRAM_CHAT_ID = ['7582735874,7947056719']
+
 
 def contact_view(request):
+    success = False
+
     if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return render(request, 'contacts/success.html')
-    else:
-        form = ContactForm()
-    return render(request, 'contacts/contact.html', {'form': form})
+        name = request.POST.get('name')
+        contact_info = request.POST.get('contact_info')
+        message = request.POST.get('message')
 
-@login_required
-def message_list(request):
-    messages = ContactMessage.objects.all().order_by('-created_at')
-    return render(request, 'contacts/admin/list.html', {'messages': messages})
+        if name and contact_info and message:
+            # 1. Ma'lumotni bazaga saqlaymiz
+            ContactMessage.objects.create(name=name, contact_info=contact_info, message=message)
 
-@login_required
-def mark_as_read(request, pk):
-    message = ContactMessage.objects.get(pk=pk)
-    message.is_read = True
-    message.save()
-    return redirect('message_list')
+            # 2. Telegramga yuboramiz
+            text = f"""🆕 *Yangi Aloqa Xabari* 📩
+            👤 *Ism:* {name}
+            📞 *Kontakt:* {contact_info}
+            📝 *Xabar:*
+            _{message}_"""
+
+            # Ikki chat_id ga yuborish
+            chat_ids = [7582735874, 7947056719]
+
+            for chat_id in chat_ids:
+                url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+                payload = {'chat_id': chat_id, 'text': text, 'parse_mode': 'Markdown'}
+                requests.post(url, data=payload)
+
+            success = True
+
+    return render(request, 'contact.html', {'success': success})

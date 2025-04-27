@@ -17,40 +17,34 @@
     <div class="row d-flex align-items-center">
         <div class="col-md-4 mb-4">
             <form class="container gap-3 py-4 px-3" id="contact-form" method="post" novalidate>
-                {% csrf_token %}
+    {% csrf_token %}
 
-                <div class="alert alert-danger d-none" id="error-message" role="alert">
-                    Iltimos, barcha maydonlarni to'ldiring!
-                </div>
+    <div class="alert alert-danger d-none" id="error-message" role="alert">
+        Iltimos, barcha maydonlarni to'ldiring!
+    </div>
 
-                {% if success %}
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Xabaringiz yuborildi!</strong>
-                    <button aria-label="Yopish" class="btn-close" data-bs-dismiss="alert" type="button"></button>
-                </div>
-                {% endif %}
+    <div class="alert alert-success d-none" id="success-message" role="alert">
+        Xabaringiz yuborildi!
+    </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="id_name">Ismingiz</label>
-                    <input class="form-control" id="id_name" name="name" placeholder="Ismingiz" required type="text">
-                </div>
+    <div class="mb-3">
+        <label class="form-label" for="id_name">Ismingiz</label>
+        <input class="form-control" id="id_name" name="name" placeholder="Ismingiz" required type="text">
+    </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="id_contact_info">Telefon raqam yoki Email</label>
-                    <input class="form-control" id="id_contact_info" name="contact_info" placeholder="+998901234567 yoki email@example.com"
-                           required type="text">
-                </div>
+    <div class="mb-3">
+        <label class="form-label" for="id_contact_info">Telefon raqam yoki Email</label>
+        <input class="form-control" id="id_contact_info" name="contact_info" placeholder="+998901234567 yoki email@example.com" required type="text">
+    </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="id_message">Xabaringiz</label>
-                    <textarea class="form-control" id="id_message" name="message" placeholder="Xabaringizni yozing..."
-                              required rows="4"></textarea>
-                </div>
+    <div class="mb-3">
+        <label class="form-label" for="id_message">Xabaringiz</label>
+        <textarea class="form-control" id="id_message" name="message" placeholder="Xabaringizni yozing..." required rows="4"></textarea>
+    </div>
 
-                <button class="btn btn-warning text-white" type="submit">
-                    Jo'natish
-                </button>
-            </form>
+    <button class="btn btn-warning text-white" type="submit">Jo'natish</button>
+</form>
+
 
             <p class="contact-item mt-3">
                 <i class="bi bi-telephone-fill text-success me-2"></i>
@@ -92,19 +86,49 @@
 <script>
     const form = document.getElementById('contact-form');
     const errorMessage = document.getElementById('error-message');
+    const successMessage = document.getElementById('success-message');
 
     form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
         const name = document.getElementById('id_name').value.trim();
         const contact = document.getElementById('id_contact_info').value.trim();
         const message = document.getElementById('id_message').value.trim();
 
         if (!name || !contact || !message) {
-            e.preventDefault();
             errorMessage.classList.remove('d-none');
-        } else {
-            errorMessage.classList.add('d-none');
+            successMessage.classList.add('d-none');
+            return;
         }
+
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+        fetch("{% url 'contact' %}", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'X-CSRFToken': csrfToken
+            },
+            body: new URLSearchParams({
+                'name': name,
+                'contact_info': contact,
+                'message': message
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                form.reset();
+                successMessage.classList.remove('d-none');
+                errorMessage.classList.add('d-none');
+            } else {
+                throw new Error('Xatolik yuz berdi.');
+            }
+        })
+        .catch(error => {
+            errorMessage.classList.remove('d-none');
+            successMessage.classList.add('d-none');
+        });
     });
 </script>
 {% endblock %}
-src=""
+
