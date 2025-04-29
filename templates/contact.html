@@ -16,7 +16,8 @@
 <section class="container">
     <div class="row d-flex align-items-center">
         <div class="col-md-4 mb-4">
-            <form class="container gap-3 py-4 px-3" id="contact-form" method="post" novalidate>
+            <form action="{% url 'contact' %}" method="post" class="container gap-3 py-4 px-3" id="contact-form" novalidate>
+
     {% csrf_token %}
 
     <div class="alert alert-danger d-none" id="error-message" role="alert">

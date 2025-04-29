@@ -1,13 +1,14 @@
-# views.py
 import requests
 from django.shortcuts import render, redirect
-from django.conf import settings
 from .forms import ContactForm
 
 
+TELEGRAM_BOT_TOKEN = '7202357879:AAHtxkIueQ-qNT4TNaeF19PNuDwD7FA11RM'
+TELEGRAM_CHAT_ID = ['7582735874,7947056719']
+
 def send_to_telegram(message):
-    bot_token = settings.TELEGRAM_BOT_TOKEN
-    chat_id = settings.TELEGRAM_CHAT_ID
+    bot_token = TELEGRAM_BOT_TOKEN
+    chat_id = TELEGRAM_CHAT_ID
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
 
     try:
@@ -39,7 +40,6 @@ def contact_view(request):
             # Telegramga yuborish
             send_to_telegram(message)
 
-            return redirect('success')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
