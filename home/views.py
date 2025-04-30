@@ -2,6 +2,7 @@ from django.core.paginator import Paginator
 from.models import *
 from django.shortcuts import render, get_object_or_404
 from .models import Teacher
+from django.http import JsonResponse
 
 # Create your views here.
 def home_view(request):
@@ -12,7 +13,6 @@ def contact_view(request):
     return render(request, 'contact.html')
 
 
-from django.http import JsonResponse
 
 
 def contactform(request):
@@ -24,7 +24,6 @@ def contactform(request):
         if not all([name, contact_info, message]):
             return JsonResponse({'success': False, 'error': 'Iltimos, barcha maydonlarni to\'ldiring'})
 
-        # Telegramga yuborish
         telegram_message = (
             f"<b>Yangi xabar!</b>\n\n"
             f"<b>Ism:</b> {name}\n"
