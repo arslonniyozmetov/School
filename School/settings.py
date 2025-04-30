@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 ADMIN_SITE_HEADER = "Pitnak 8-son Maktab Admin Paneli"
 
 
-
-
+TELEGRAM_BOT_TOKEN = '7202357879:AAHtxkIueQ-qNT4TNaeF19PNuDwD7FA11RM'  # BotFatherdan olingan token
+TELEGRAM_CHAT_IDS = ['7582735874','7947056719']     # Botga yozadigan guruh yoki shaxsiy chat ID
 
 # Application definition
 
@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
-    'contactmessages',
 ]
 
 MIDDLEWARE = [
