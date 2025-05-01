@@ -3,11 +3,8 @@
 
 {% block title %}Aloqa{% endblock %}
 
-{% block extra_css %}
-<link href="{% static 'main/css/news.css' %}" rel="stylesheet">
-{% endblock %}
-
 {% block content %}
+<script src="{% static 'main/js/contact-form.js' %}" ></script>
 <main style="padding-top: 80px;">
     <h2 class="text-center mb-5 section-title fw-bold">Aloqa</h2>
 </main>
@@ -15,15 +12,17 @@
 <section class="container">
     <div class="row d-flex align-items-center">
         <div class="col-md-4 mb-4">
-            <form action="{% url 'contactform' %}" method="post" class="container gap-3 py-4 px-3" id="contact-form" novalidate>
+            <form action="{% url 'contactform' %}" class="container gap-3 py-4 px-3" id="contact-form" method="post"
+                  novalidate>
                 {% csrf_token %}
 
-                <div class="alert alert-danger d-none" id="error-message" role="alert">
+                <div class="alert alert-danger d-none" id="error" role="alert">
                     Iltimos, barcha maydonlarni to'ldiring!
                 </div>
 
-                <div class="alert alert-success d-none" id="success-message" role="alert">
+                <div class="alert alert-success d-none" id="success" role="alert">
                     Xabaringiz yuborildi!
+
                 </div>
 
                 <div class="mb-3">
@@ -33,12 +32,14 @@
 
                 <div class="mb-3">
                     <label class="form-label" for="id_contact_info">Telefon raqam yoki Email</label>
-                    <input class="form-control" id="id_contact_info" name="contact_info" placeholder="+998901234567 yoki email@example.com" required type="text">
+                    <input class="form-control" id="id_contact_info" name="contact_info"
+                           placeholder="+998901234567 yoki email@example.com" required type="text">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label" for="id_message">Xabaringiz</label>
-                    <textarea class="form-control" id="id_message" name="message" placeholder="Xabaringizni yozing..." required rows="4"></textarea>
+                    <textarea class="form-control" id="id_message" name="message" placeholder="Xabaringizni yozing..."
+                              required rows="4"></textarea>
                 </div>
 
                 <button class="btn btn-warning text-white" type="submit">Yuborish</button>
@@ -60,86 +61,22 @@
             </p>
 
             <div class="d-flex gap-4 mt-3">
-                <a class="bi bi-telegram text-primary fs-3" href="" target="_blank"></a>
+                <a class="bi bi-telegram text-primary fs-3" href="https://t.me/pitnak8maktab" target="_blank"></a>
                 <a class="bi bi-youtube text-danger fs-3" href="" target="_blank"></a>
             </div>
         </div>
 
         <div class="col-md-8">
             <iframe
-                allowfullscreen=""
-                height="450"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.3511606494692!2d61.299898861530686!3d41.19863469787446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f60018a07f884c5%3A0x8bf6742ed4735ab4!2z0KHRgNC10LTQvdGP0Y8g0YjQutC-0LvQsCDihJY4!5e1!3m2!1suz!2s!4v1745759232315!5m2!1suz!2s"
-                style="border:0;"
-                width="100%">
+                    allowfullscreen=""
+                    height="450"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.3511606494692!2d61.299898861530686!3d41.19863469787446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f60018a07f884c5%3A0x8bf6742ed4735ab4!2z0KHRgNC10LTQvdGP0Y8g0YjQutC-0LvQsCDihJY4!5e1!3m2!1suz!2s!4v1745759232315!5m2!1suz!2s"
+                    style="border:0;"
+                    width="100%">
             </iframe>
         </div>
     </div>
 </section>
-{% endblock %}
-
-{% block extra_js %}
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contact-form');
-    const errorMessage = document.getElementById('error-message');
-    const successMessage = document.getElementById('success-message');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const name = document.getElementById('id_name').value.trim();
-        const contact = document.getElementById('id_contact_info').value.trim();
-        const message = document.getElementById('id_message').value.trim();
-
-        if (!name || !contact || !message) {
-            errorMessage.classList.remove('d-none');
-            successMessage.classList.add('d-none');
-            return;
-        }
-
-        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
-
-        fetch(form.action, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'X-CSRFToken': csrfToken
-            },
-            body: new URLSearchParams({
-                'name': name,
-                'contact_info': contact,
-                'message': message
-            })
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            if (data.success) {
-                form.reset();
-                success-message.classList.remove('d-none');
-                errorMessage.classList.add('d-none');
-
-                // 3 soniyadan so'ng xabarni yashirish
-                setTimeout(() => {
-                    success-message.classList.add('d-none');
-                }, 3000);
-            } else {
-                throw new Error(data.error || 'Xatolik yuz berdi.');
-            }
-        })
-        .catch(error => {
-            error-message.textContent = error.message;
-            error-message.classList.remove('d-none');
-            successMessage.classList.add('d-none');
-        });
-    });
-});
-</script>
 {% endblock %}

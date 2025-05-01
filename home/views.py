@@ -22,7 +22,10 @@ def contactform(request):
         message = request.POST.get('message', '').strip()
 
         if not all([name, contact_info, message]):
-            return JsonResponse({'success': False, 'error': 'Iltimos, barcha maydonlarni to\'ldiring'})
+            return JsonResponse({
+                'response': 'error',
+                'Message': 'Iltimos, barcha maydonlarni to\'ldiring!'
+            }, status=400)
 
         telegram_message = (
             f"<b>Yangi xabar!</b>\n\n"
@@ -33,8 +36,12 @@ def contactform(request):
 
         send_to_telegram(telegram_message)
 
-        return JsonResponse({'success': True})
-    return None
+        return JsonResponse({
+            'response': 'success',
+            'Message': 'Xabaringiz muvaffaqiyatli yuborildi!'
+        })
+
+    return render(request, 'contact.html')
 
 
 def teacher_view(request):

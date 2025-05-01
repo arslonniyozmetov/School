@@ -17,7 +17,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{ news.title }}</h5>
-                <p class="card-text">{{ news.content|truncatechars:100 }}</p>
+<!--                <p class="card-text">{{ news.content|truncatechars:50 }}</p>-->
                 <a class="btn btn-primary" href="{% url 'news_detail' news.slug %}">Batafsil o'qish</a>
             </div>
         </div>
