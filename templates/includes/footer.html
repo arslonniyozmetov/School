@@ -1,9 +1,6 @@
 {% load static %}
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="{% static 'vendor/bootstrap-icons/font/bootstrap-icons.css' %}" rel="stylesheet">
 <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
-<link href="{% static 'main/css/news.css' %}" rel="stylesheet">
-<link href="{% static 'main/css/main.css' %}" rel="stylesheet">
+
 <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
@@ -19,7 +16,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="{% url 'about' %}" class="text-white text-decoration-none">Maktab Haqida</a></li>
                         <li class="mb-2"><a href="{% url 'news' %}" class="text-white text-decoration-none">Yangiliklar</a></li>
-                        <li class="mb-2"><a href="{% url 'teacher' %}" class="text-white text-decoration-none">Ustozlar</a></li>
+                        <li class="mb-2"><a href="{% url 'teachers' %}" class="text-white text-decoration-none">Ustozlar</a></li>
                         <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Aloqa</a></li>
                     </ul>
                 </div>

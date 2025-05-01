@@ -27,7 +27,7 @@ class News(models.Model):
 class Teacher(models.Model):
     name = models.CharField(max_length=100, verbose_name="Ism")
     subject = models.CharField(max_length=100, verbose_name="Fan")
-    photo = models.ImageField(upload_to='teacher_photos/', verbose_name="Rasm")
+    photo = models.ImageField(upload_to='teachers_photos/', verbose_name="Rasm")
 
     def __str__(self):
         return self.name

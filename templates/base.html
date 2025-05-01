@@ -3,35 +3,24 @@
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>{% block title %}Pitnak 8-son maktab{% endblock %}</title>
     <link href="{% static 'main/img/logo.png' %}" rel="icon" type="image/x-icon">
-    <!-- Bootstrap CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Custom CSS -->
+    <link href="{% static 'vendor/bootstrap-icons/font/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="{% static 'main/css/main.css' %}" rel="stylesheet">
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
     <link href="{% static 'main/css/news.css' %}" rel="stylesheet">
-    <link href="{% static 'main/css/about.css' %}" rel="stylesheet">
 </head>
 <body>
-    <!-- Header (Navbar) -->
-    {% include 'includes/header.html' %}
-
-    <!-- Asosiy Kontent (Har bir sahifa uchun o'zgaradi) -->
-    <main class="container my-5">
-        {% block content %}
-        <!-- Child template lar bu joyni to'ldiradi -->
-        {% endblock %}
-    </main>
-
-    <!-- Footer -->
-    {% include 'includes/footer.html' %}
-
-    <!-- Bootstrap JS -->
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
-
-    <script src="{% static 'main/js/main.js' %}" ></script>
+{% include 'includes/header.html' %}
+<main class="container my-5">
+    {% block content %}
+    {% endblock %}
+</main>
+{% include 'includes/footer.html' %}
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'main/js/main.js' %}"></script>
 </body>
 </html>

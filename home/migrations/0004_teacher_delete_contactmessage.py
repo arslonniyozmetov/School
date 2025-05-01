@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=100, verbose_name='Ism')),
                 ('subject', models.CharField(max_length=100, verbose_name='Fan')),
                 ('bio', models.TextField(verbose_name="Qisqacha ma'lumot")),
-                ('photo', models.ImageField(upload_to='teacher_photos/', verbose_name='Rasm')),
+                ('photo', models.ImageField(upload_to='teachers_photos/', verbose_name='Rasm')),
             ],
             options={
                 'verbose_name': 'Ustoz',

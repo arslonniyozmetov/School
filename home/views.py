@@ -44,9 +44,9 @@ def contactform(request):
     return render(request, 'contact.html')
 
 
-def teacher_view(request):
+def teachers_view(request):
     teachers = Teacher.objects.all()
-    return render(request, 'teacher.html', {'teachers': teachers})
+    return render(request, 'teachers.html', {'teachers': teachers})
 
 
 import requests

@@ -4,24 +4,24 @@
 {% block title %}{{ news.title }}{% endblock %}
 
 {% block extra_css %}
-<link href="{% static 'main/css/news.css' %}" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 {% endblock %}
 {% block content %}
 <div style="padding-top: 80px;">
     <div class="row justify-content-center">
         <div class="col-lg-8">
-            <h1 class="mb-4">{{ news.title }}</h1>
+            <h1>{{ news.title }}</h1>
+             <p class="text-muted mt-2">{{ news.date_posted|date:"d.m.Y H:i" }} | <i class="fas fa-eye"></i> {{ news.views }}</p>
             <div class="mb-4">
-                <img src="{{ news.image.url }}" alt="{{ news.title }}" class="img-fluid rounded">
-                <p class="text-muted mt-2">{{ news.date_posted|date:"d.m.Y H:i" }} | <i class="fas fa-eye"></i> {{ news.views }}</p>
-
+                <img alt="{{ news.title }}" class="img-fluid rounded" src="{{ news.image.url }}">
             </div>
             <div class="news-content">
                 {{ news.content|linebreaks }}
             </div>
-            <a href="{% url 'news' %}" class="btn btn-primary mt-4">Orqaga</a>
+            <a class="btn btn-primary mt-4" href="{% url 'news' %}">Orqaga</a>
+
         </div>
+
     </div>
 </div>
 {% endblock %}

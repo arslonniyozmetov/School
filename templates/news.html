@@ -4,6 +4,7 @@
 {% block title %}Yangiliklar{% endblock %}
 
 {% block content %}
+<link href="{% static 'main/css/news.css' %}" rel="stylesheet">
 <main style="padding-top: 80px;">
     <h2 class="text-center mb-5 section-title fw-bold">Maktab Yangiliklari</h2>
 </main>
@@ -16,16 +17,13 @@
                 <span class="news-date">{{ news.date_posted|date:"d.m.Y" }}</span>
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ news.title }}</h5>
-<!--                <p class="card-text">{{ news.content|truncatechars:50 }}</p>-->
+                <h5 class="card-title mb-4">{{ news.title }}</h5>
                 <a class="btn btn-primary" href="{% url 'news_detail' news.slug %}">Batafsil o'qish</a>
             </div>
         </div>
     </div>
     {% endfor %}
 </div>
-
-<!-- Sahifalash -->
 {% include 'pagination.html' %}
 
 {% endblock %}
