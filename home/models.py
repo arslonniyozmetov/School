@@ -6,6 +6,7 @@ from django.utils.text import slugify
 class News(models.Model):
     title = models.CharField(max_length=200, verbose_name="Sarlavha")
     content = models.TextField(verbose_name="Matn")
+    views = models.PositiveIntegerField(default=0)
     image = models.ImageField(upload_to='news_images/', verbose_name="Rasm")
     date_posted = models.DateTimeField(default=timezone.now, verbose_name="Sana")
     slug = models.SlugField(max_length=200, unique=True, blank=True)

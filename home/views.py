@@ -79,4 +79,6 @@ def news_list(request):
 
 def news_detail(request, slug):
     news_item = get_object_or_404(News, slug=slug)
+    news_item.views += 1
+    news_item.save(update_fields=["views"])
     return render(request, 'news_detail.html', {'news': news_item})
