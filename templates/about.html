@@ -9,48 +9,69 @@
 </main>
 
 <section class="container section" style="scroll-margin-top: 5rem">
-    <div class="row align-items-center">
-        <!-- Left: Text section -->
-        <div class="col-lg-6 mb-4">
-            <div class="card border-0 shadow-sm p-4 bg-light">
-                <h3 class="text-dark fw-bold mb-3">Biz haqimizda</h3>
-                <p>Xorazm viloyati Tuproqqal'a tumanidagi 8-son umumta'lim maktabi o‘quvchilarga yuqori sifatli ta’lim va tarbiya berishga intiladi.</p>
-
-                <h5 class="mt-4 fw-bold text-dark">Maqsadimiz</h5>
-                <p>Bilimdon, vatanparvar, mas'uliyatli yoshlarni tarbiyalash.</p>
-
-                <h5 class="mt-4 fw-bold text-dark">Statistika</h5>
-<div class="row text-center mt-3">
-    <div class="col-6 col-md-4 mb-4">
-        <div class="card shadow-sm border-0 p-3">
-            <h2 class="fw-bold text-info">790+</h2>
-            <p class="mb-0">O‘quvchilar</p>
-        </div>
-    </div>
-    <div class="col-6 col-md-4 mb-4">
-        <div class="card shadow-sm border-0 p-3">
-            <h2 class="fw-bold text-success">67</h2>
-            <p class="mb-0">O‘qituvchilar</p>
-        </div>
-    </div>
-    <div class="col-6 col-md-4 mb-4">
-        <div class="card shadow-sm border-0 p-3">
-            <h2 class="fw-bold text-primary">89%</h2>
-            <p class="mb-0">OTMga kirish ko'rsatichi</p>
-        </div>
-    </div>
-</div>
-
+    <div class="row mb-5">
+        <div class="col-lg-6">
+            <div class="card border-0 shadow-sm p-4 bg-light h-100">
+                <h3 class="text-dark fw-bold mb-3">Maktab haqida</h3>
+                <p>
+                    Xorazm viloyati Tuproqqal'a tumanidagi 8-son umumta'lim maktabi yuqori sifatli ta’lim va tarbiya berishga intiladi.
+                    Biz maktabni nafaqat bilim maskani, balki yoshlar uchun imkoniyatlar eshigi deb hisoblaymiz.
+                </p>
+                <p>
+                    Maktabimizda zamonaviy sinfxonalar, tajribali ustozlar va o‘quvchilarning rivojlanishi uchun barcha shart-sharoitlar mavjud.
+                </p>
             </div>
         </div>
+        <div class="col-lg-6">
+            <div class="card border-0 shadow-sm p-4 bg-light h-100">
+                <h3 class="text-dark fw-bold mb-3">Maqsad va Yondashuv</h3>
+                <p>
+                    Maqsadimiz – bilimli, vatanparvar va mas'uliyatli avlodni tarbiyalash. O‘quvchilarning qiziqishlarini hisobga olib,
+                    turli to‘garaklar va qo‘shimcha mashg‘ulotlar tashkil qilinadi.
+                </p>
+                <p>
+                    Ota-onalar bilan yaqin hamkorlikda ishlash orqali bolalar ta’limidagi muhim bo‘g‘inlar mustahkamlanadi.
+                </p>
+            </div>
+        </div>
+    </div>
 
-        <!-- Right: Map section -->
-        <div class="col-lg-6 mb-4">
-            <div class="card shadow-sm border-0">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.3511606494692!2d61.299898861530686!3d41.19863469787446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f60018a07f884c5%3A0x8bf6742ed4735ab4!2z0KHRgNC10LTQvdGP0Y8g0YjQutC-0LvQsCDihJY4!5e1!3m2!1suz!2s!4v1745759232315!5m2!1suz!2s"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+    <!-- Leadership section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm p-4 bg-white">
+                <h3 class="text-dark fw-bold mb-4 text-center">Rahbariyat</h3>
+                <div class="row text-center">
+                    {% for member in leadership %}
+                    <div class="col-md-4 mb-4">
+                        <img src="{{ member.photo.url }}" class="rounded-circle mb-3" width="120" alt="{{ member.name }}">
+                        <h5 class="fw-bold mb-0">{{ member.name }}</h5>
+                        <small class="text-muted">{{ member.position }}</small>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <h3 class="text-dark fw-bold mb-4">Statistika</h3>
+        <div class="col-6 col-md-4 mb-4">
+            <div class="card shadow-sm border-0 p-3">
+                <h2 class="fw-bold text-info">790+</h2>
+                <p class="mb-0">O‘quvchilar</p>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-4">
+            <div class="card shadow-sm border-0 p-3">
+                <h2 class="fw-bold text-success">67</h2>
+                <p class="mb-0">O‘qituvchilar</p>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 mb-4">
+            <div class="card shadow-sm border-0 p-3">
+                <h2 class="fw-bold text-primary">89%</h2>
+                <p class="mb-0">OTMga kirish ko‘rsatkichi</p>
             </div>
         </div>
     </div>

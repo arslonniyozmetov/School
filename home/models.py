@@ -35,3 +35,17 @@ class Teacher(models.Model):
     class Meta:
         verbose_name = "Ustoz"
         verbose_name_plural = "Ustozlar"
+
+
+class Leadership(models.Model):
+    name = models.CharField(max_length=255)
+    position = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to='leadership/', null=True, blank=True)
+    order = models.PositiveIntegerField(default=0, blank=True, null=True)
+
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name = "Xodim"
+        verbose_name_plural = "Rahbarlar"
+        ordering = ['order']  #

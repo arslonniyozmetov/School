@@ -5,25 +5,29 @@
 
 {% block content %}
 <link href="{% static 'main/css/news.css' %}" rel="stylesheet">
+
 <main style="padding-top: 80px;">
     <h2 class="text-center mb-5 section-title fw-bold">Maktab Yangiliklari</h2>
 </main>
-<div class="row g-4">
-    {% for news in page_obj %}
-    <div class="col-md-6 col-lg-4">
-        <div class="card h-100 news-card shadow-sm">
-            <div class="news-img-container">
-                <img alt="{{ news.title }}" class="card-img-top" src="{{ news.image.url }}">
-                <span class="news-date">{{ news.date_posted|date:"d.m.Y" }}</span>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title mb-4">{{ news.title }}</h5>
-                <a class="btn btn-primary" href="{% url 'news_detail' news.slug %}">Batafsil o'qish</a>
+
+<div class="container">
+    <div class="row g-4">
+        {% for news in page_obj %}
+        <div class="col-md-6 col-lg-4">
+            <div class="card h-100 news-card shadow-sm">
+                <div class="news-img-container">
+                    <img alt="{{ news.title }}" class="card-img-top" src="{{ news.image.url }}">
+                    <span class="news-date">{{ news.date_posted|date:"d.m.Y" }}</span>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-4">{{ news.title }}</h5>
+                    <a class="btn btn-primary" href="{% url 'news_detail' news.slug %}">Batafsil o'qish</a>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
-{% include 'pagination.html' %}
 
+{% include 'pagination.html' %}
 {% endblock %}

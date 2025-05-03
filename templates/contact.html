@@ -4,79 +4,58 @@
 {% block title %}Aloqa{% endblock %}
 
 {% block content %}
-<script src="{% static 'main/js/contact-form.js' %}" ></script>
+<script src="{% static 'main/js/contact-form.js' %}"></script>
+
 <main style="padding-top: 80px;">
-    <h2 class="text-center mb-5 section-title fw-bold">Aloqa</h2>
-</main>
+    <div class="container">
+        <h2 class="text-center mb-5 section-title fw-bold">Aloqa</h2>
 
-<section class="container">
-    <div class="row d-flex align-items-center">
-        <div class="col-md-4 mb-4">
-            <form action="{% url 'contactform' %}" class="container gap-3 py-4 px-3" id="contact-form" method="post"
-                  novalidate>
-                {% csrf_token %}
+        <div class="row gy-5">
+            <div class="col-lg-5">
+                <form action="{% url 'contactform' %}" id="contact-form" method="post" novalidate class="bg-light p-4 shadow rounded">
+                    {% csrf_token %}
 
-                <div class="alert alert-danger d-none" id="error" role="alert">
-                    Iltimos, barcha maydonlarni to'ldiring!
+                    <div class="alert alert-danger d-none" id="error">Iltimos, barcha maydonlarni to‘ldiring!</div>
+                    <div class="alert alert-success d-none" id="success">Xabaringiz yuborildi!</div>
+
+                    <div class="mb-3">
+                        <label for="id_name" class="form-label">Ismingiz</label>
+                        <input type="text" id="id_name" name="name" placeholder="Ismingiz" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="id_contact_info" class="form-label">Telefon yoki Email</label>
+                        <input type="text" id="id_contact_info" name="contact_info" placeholder="+998901234567 yoki email@example.com" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="id_message" class="form-label">Xabaringiz</label>
+                        <textarea id="id_message" name="message" rows="4" placeholder="Xabaringizni yozing..." class="form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-warning text-white w-100">Yuborish</button>
+                </form>
+
+                <div class="mt-4">
+                    <p><i class="bi bi-telephone-fill text-success me-2"></i><a href="tel:+998993117880">+998 99 311 78 80</a></p>
+                    <p><i class="bi bi-envelope-fill text-warning me-2"></i><a href="mailto:pitnak8maktab@gmail.com">pitnak8maktab@gmail.com</a></p>
+                    <p><i class="bi bi-geo-alt-fill text-danger me-2"></i><a href="https://maps.app.goo.gl/8kxPhodMey1r6WLbA" target="_blank">Tuproqqal'a Tumani</a></p>
+
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://t.me/pitnak8maktab" target="_blank" class="fs-4 text-primary"><i class="bi bi-telegram"></i></a>
+                        <a href="#" target="_blank" class="fs-4 text-danger"><i class="bi bi-youtube"></i></a>
+                    </div>
                 </div>
-
-                <div class="alert alert-success d-none" id="success" role="alert">
-                    Xabaringiz yuborildi!
-
+            </div>
+            <div class="col-lg-7">
+                <div class="ratio ratio-4x3 rounded shadow">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.3511606494692!2d61.299898861530686!3d41.19863469787446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f60018a07f884c5%3A0x8bf6742ed4735ab4!2z0KHRgNC10LTQvdGP0Y8g0YjQutC-0LvQsCDihJY4!5e1!3m2!1suz!2s!4v1745759232315!5m2!1suz!2s"
+                        style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-
-                <div class="mb-3">
-                    <label class="form-label" for="id_name">Ismingiz</label>
-                    <input class="form-control" id="id_name" name="name" placeholder="Ismingiz" required type="text">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label" for="id_contact_info">Telefon raqam yoki Email</label>
-                    <input class="form-control" id="id_contact_info" name="contact_info"
-                           placeholder="+998901234567 yoki email@example.com" required type="text">
-                </div>
-
-                <div class="mb-3">
-                    <label class="form-label" for="id_message">Xabaringiz</label>
-                    <textarea class="form-control" id="id_message" name="message" placeholder="Xabaringizni yozing..."
-                              required rows="4"></textarea>
-                </div>
-
-                <button class="btn btn-warning text-white" type="submit">Yuborish</button>
-            </form>
-
-            <p class="contact-item mt-3">
-                <i class="bi bi-telephone-fill text-success me-2"></i>
-                <a href="tel:+998972111402">+998 99 311 78 80</a>
-            </p>
-
-            <p class="contact-item">
-                <i class="bi bi-envelope-fill text-warning me-2"></i>
-                <a href="mailto:pitnak8maktab@gmail.com">pitnak8maktab@gmail.com</a>
-            </p>
-
-            <p class="contact-item">
-                <i class="bi bi-geo-alt-fill text-danger me-2"></i>
-                <a href="https://maps.app.goo.gl/8kxPhodMey1r6WLbA" target="_blank">Tuproqqal'a Tuman</a>
-            </p>
-
-            <div class="d-flex gap-4 mt-3">
-                <a class="bi bi-telegram text-primary fs-3" href="https://t.me/pitnak8maktab" target="_blank"></a>
-                <a class="bi bi-youtube text-danger fs-3" href="" target="_blank"></a>
             </div>
         </div>
-
-        <div class="col-md-8">
-            <iframe
-                    allowfullscreen=""
-                    height="450"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1444.3511606494692!2d61.299898861530686!3d41.19863469787446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f60018a07f884c5%3A0x8bf6742ed4735ab4!2z0KHRgNC10LTQvdGP0Y8g0YjQutC-0LvQsCDihJY4!5e1!3m2!1suz!2s!4v1745759232315!5m2!1suz!2s"
-                    style="border:0;"
-                    width="100%">
-            </iframe>
-        </div>
     </div>
-</section>
+</main>
 {% endblock %}

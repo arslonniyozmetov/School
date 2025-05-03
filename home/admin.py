@@ -19,3 +19,11 @@ class NewsAdmin(admin.ModelAdmin):
     image_preview.short_description = 'Rasm'
 
 admin.site.register(Teacher)
+
+
+class LeadershipAdmin(admin.ModelAdmin):
+    list_display = ('name', 'position', 'photo','order')
+    search_fields = ('name', 'position')
+    list_editable = ('order',)
+
+admin.site.register(Leadership, LeadershipAdmin)

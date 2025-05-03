@@ -8,7 +8,8 @@ from django.http import JsonResponse
 def home_view(request):
     return render(request, 'index.html')
 def about_view(request):
-    return render(request, 'about.html')
+    leadership = Leadership.objects.all()
+    return render(request, 'about.html', {'leadership': leadership})
 def contact_view(request):
     return render(request, 'contact.html')
 

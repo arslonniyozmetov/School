@@ -1,47 +1,51 @@
 {% load static %}
 <link href="{% static 'main/css/style.css' %}" rel="stylesheet">
 
-<footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <a href="{% url 'home' %}" class="d-flex align-items-center text-decoration-none">
-                        <img src="{% static 'main/img/logo.png' %}" alt="Logo" height="60" class="me-3">
-                        <span class="text-white fs-5 fw-bold">8-son Maktab</span>
-                    </a>
-                    <p class="mt-3 mb-0">Xorazm viloyati Tuproqqal'a tumani</p>
-                </div>
-
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="{% url 'about' %}" class="text-white text-decoration-none">Maktab Haqida</a></li>
-                        <li class="mb-2"><a href="{% url 'news' %}" class="text-white text-decoration-none">Yangiliklar</a></li>
-                        <li class="mb-2"><a href="{% url 'teachers' %}" class="text-white text-decoration-none">Ustozlar</a></li>
-                        <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Aloqa</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4">
-                    <h5>Ijtimoiy Tarmoqlar</h5>
-                    <div class="social-icons mt-3">
-                        <a href="https://t.me/pitnak8maktab" class="text-white me-3"><i class="bi bi-telegram fs-4"></i></a>
-                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
-                    </div>
-                    <div class="mt-3">
-                        <p class="mb-1"><i class="bi bi-telephone me-2"></i> +998 99 311 78 80</p>
-                        <p class="mb-0"><i class="bi bi-envelope me-2"></i> pitnak8maktab@gmail.com</p>
-                    </div>
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <div class="col-12 col-md-3 mb-4">
+                <a href="{% url 'home' %}" class="d-flex align-items-center justify-content-center justify-content-md-start text-decoration-none">
+                    <img src="{% static 'main/img/logo.png' %}" alt="Logo" height="60" class="me-2">
+                    <span class="fs-5 fw-bold text-white">8-son Maktab</span>
+                </a>
+                <p class="mt-3 mb-0">Xorazm viloyati Tuproqqal'a tumani</p>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+                <h6 class="fw-bold mb-3">Sahifalar</h6>
+                <ul class="list-unstyled">
+                    <li><a href="{% url 'about' %}" class="text-white text-decoration-none">Maktab Haqida</a></li>
+                    <li><a href="{% url 'news' %}" class="text-white text-decoration-none">Yangiliklar</a></li>
+                    <li><a href="{% url 'teachers' %}" class="text-white text-decoration-none">Ustozlar</a></li>
+                    <li><a href="{% url 'contact' %}" class="text-white text-decoration-none">Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+                <h6 class="fw-bold mb-3">Ijtimoiy Tarmoqlar</h6>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="https://t.me/pitnak8maktab" class="text-white me-3"><i class="bi bi-telegram fs-4"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
                 </div>
             </div>
-
-            <hr class="mt-4 mb-3">
-
-            <div class="text-center">
-                <p class="mb-0">
-                    &copy; 2025 Pitnak 8-son Umumta'lim Maktabi rasmiy sayti. Barcha huquqlar himoyalangan.
-                    <span class="d-block d-md-inline mt-2 mt-md-0"> Created by: <a href="https://t.me/leetcoder1337" class="text-warning text-decoration-none">Leet Coding Group</a></span>
-                </p>
+            <div class="col-12 col-md-3">
+                <h6 class="fw-bold mb-3">Bog'lanish</h6>
+                <p class="mb-2"><i class="bi bi-telephone me-2"></i> +998 99 311 78 80</p>
+                <p class="mb-0"><i class="bi bi-envelope me-2"></i> pitnak8maktab@gmail.com</p>
             </div>
         </div>
-    </footer>
+
+        <hr class="my-4">
+        <div class="text-center">
+            <p class="mb-0 small">
+                &copy; <span id="currentYear"></span> Pitnak 8-son Umumta'lim Maktabi. Barcha huquqlar himoyalangan. <br>
+                Created by: <a href="https://t.me/leetcoder1337" class="text-warning text-decoration-none">Leet Coding Group</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    });
+</script>
