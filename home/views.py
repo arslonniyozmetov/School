@@ -45,7 +45,7 @@ def contactform(request):
 
 
 def teachers_view(request):
-    teachers = Teacher.objects.all()
+    teachers = Teacher.objects.all().order_by('name')
     return render(request, 'teachers.html', {'teachers': teachers})
 
 
